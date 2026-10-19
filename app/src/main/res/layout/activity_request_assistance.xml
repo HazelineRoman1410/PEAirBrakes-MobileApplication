@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".RequestAssistanceActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/request_assistance_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_request_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Assistance"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/et_truck_reg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Truck Registration Number"
+            android:inputType="textCapCharacters"
+            app:layout_constraintTop_toBottomOf="@id/tv_request_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <EditText
+            android:id="@+id/et_problem_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Describe the problem..."
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@id/et_truck_reg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn_upload_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Take Photo of Problem"
+            android:backgroundTint="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/et_problem_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+        <ImageView
+            android:id="@+id/iv_problem_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/btn_upload_photo"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_get_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Attach My Pin Location"
+            android:backgroundTint="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/iv_problem_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_location_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: Not attached"
+            app:layout_constraintTop_toBottomOf="@id/btn_get_location"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_submit_request"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Submit Assistance Request"
+            android:backgroundTint="@color/red"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_location_status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

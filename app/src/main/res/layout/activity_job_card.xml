@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/job_card_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_job_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Card"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_start_time_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Started: Not started"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/tv_job_card_title"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Travel Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_travel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_start_time_display">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel Tracking"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/btn_start_km"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Start KM"
+                        android:backgroundTint="@color/red" />
+
+                    <View android:layout_width="8dp" android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/btn_stop_km"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Arrived"
+                        android:enabled="false"
+                        android:backgroundTint="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_travel_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Status: Ready" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Truck Details -->
+        <TextView
+            android:id="@+id/tv_label_truck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Truck Details"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/card_travel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/et_truck_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Truck Registration"
+            android:inputType="textCapCharacters"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_truck" />
+
+        <EditText
+            android:id="@+id/et_truck_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Truck Make"
+            app:layout_constraintTop_toBottomOf="@id/et_truck_reg" />
+
+        <EditText
+            android:id="@+id/et_kilometers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Truck Odometer (KM)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/et_truck_make" />
+
+        <!-- Problem Description -->
+        <TextView
+            android:id="@+id/tv_label_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problem Description"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/et_kilometers"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/et_job_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe the problem and work done"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_problem" />
+
+        <!-- Parts Used -->
+        <TextView
+            android:id="@+id/tv_label_parts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parts Used"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/et_job_description"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/et_parts_used"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="List parts used..."
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_parts" />
+
+        <!-- Photos -->
+        <Button
+            android:id="@+id/btn_job_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Photos (Optional)"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/et_parts_used"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Refused Repairs -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_refused"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFF0F0"
+            app:layout_constraintTop_toBottomOf="@id/btn_job_photo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refused Repairs"
+                    android:textColor="@color/red"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_refused_repairs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Describe refused repairs..."
+                    android:inputType="textMultiLine"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btn_refused_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photo of Refused Work"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/red" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Driver Signature -->
+        <TextView
+            android:id="@+id/tv_label_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Signature"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/card_refused"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.example.peairbrakes.SignatureView
+            android:id="@+id/signature_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_signature" />
+
+        <Button
+            android:id="@+id/btn_clear_sig"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Signature"
+            android:textColor="@color/red"
+            app:layout_constraintTop_toBottomOf="@id/signature_view"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/btn_submit_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Job Card"
+            android:backgroundTint="@color/red"
+            android:padding="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_clear_sig"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
