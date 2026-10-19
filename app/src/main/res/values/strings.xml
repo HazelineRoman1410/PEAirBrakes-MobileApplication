@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PeAirBrakesRegisters</string>
+    <string name="register_title">Register</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="is_technician">Register as Technician</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="choose_role">Choose Your Role</string>
+    <string name="register_customer">Register as Customer</string>
+    <string name="register_technician">Register as Technician</string>
+    <string name="customer_reg_title">Customer Registration</string>
+    <string name="technician_reg_title">Technician Registration</string>
+    <string name="tech_specialty">Technician Specialty</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="company_name_hint">Company Name</string>
+    <string name="company_address_hint">Company Address</string>
+    <string name="verification_required">Company Verification Required</string>
+    <string name="scan_qr">Scan Verification QR</string>
+    <string name="status_not_verified">Status: Not Verified</string>
+    <string name="status_verified">Status: Verified</string>
+</resources>
