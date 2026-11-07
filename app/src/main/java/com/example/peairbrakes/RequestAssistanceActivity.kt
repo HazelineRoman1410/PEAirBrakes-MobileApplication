@@ -108,6 +108,22 @@ class RequestAssistanceActivity : AppCompatActivity() {
             .show()
     }
 
+    private fun isValidSouthAfricanPlate(plate: String): Boolean {
+
+        // Remove spaces and hyphens and convert to uppercase
+        val cleanedPlate = plate
+            .uppercase(Locale.ROOT)
+            .replace(" ", "")
+            .replace("-", "")
+
+        // Common South African registration formats
+        val patterns = listOf(
+            Regex("^[A-Z]{2,3}[0-9]{3,6}[A-Z]{0,3}$")
+        )
+
+        return patterns.any { it.matches(cleanedPlate) }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -143,8 +159,17 @@ class RequestAssistanceActivity : AppCompatActivity() {
             val truckReg = etTruckReg.text.toString()
             val description = etDescription.text.toString()
 
-            if (truckReg.isEmpty() || description.isEmpty()) {
-                Toast.makeText(this, "Please provide truck registration and description", Toast.LENGTH_SHORT).show()
+            if (truckReg.isEmpty()) {
+                Toast.makeText(this, "Please enter truck registration number", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (!isValidSouthAfricanPlate(truckReg)) {
+                Toast.makeText(this, "Invalid truck registration number", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            if (description.isEmpty()) {
+                Toast.makeText(this, "Please describe the problem", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
