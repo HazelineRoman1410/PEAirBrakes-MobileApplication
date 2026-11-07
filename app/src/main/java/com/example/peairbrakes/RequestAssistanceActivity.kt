@@ -35,6 +35,7 @@ class RequestAssistanceActivity : AppCompatActivity() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private var userEmail: String = ""
     private var currentPhotoPath: String = ""
+    private var locationSelected = false
     private var latitude: Double = 0.0
     private var longitude: Double = 0.0
 
@@ -50,13 +51,61 @@ class RequestAssistanceActivity : AppCompatActivity() {
     }
 
     private val requestPermissionLauncher = registerForActivityResult(
-        ActivityResultContracts.RequestPermission()
-    ) { isGranted: Boolean ->
+        ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
+        val isGranted = permissions[Manifest.permission.ACCESS_FINE_LOCATION] == true ||
+                    permissions[Manifest.permission.ACCESS_COARSE_LOCATION] == true
+
         if (isGranted) {
             getLastLocation()
         } else {
+            locationSelected = false
+            latitude = 0.0
+            longitude = 0.0
+            tvLocationStatus.text = "Location: Not attached"
             Toast.makeText(this, "Location permission denied", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private val chooseLocationLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == RESULT_OK) {
+
+                val data = result.data
+
+                if (data != null && data.hasExtra("selected_latitude") && data.hasExtra("selected_longitude")) {
+
+                    latitude = data.getDoubleExtra("selected_latitude", 0.0)
+
+                    longitude = data.getDoubleExtra("selected_longitude", 0.0)
+
+                    locationSelected = true
+
+                    tvLocationStatus.text = "Location: Manually selected on map"
+
+                    Toast.makeText(this, "Breakdown location selected!", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+    private fun showLocationOptions() {
+        val options = arrayOf("Use My Current Location", "Choose a Different Location")
+        androidx.appcompat.app.AlertDialog.Builder(this)
+            .setTitle("Attach Breakdown Location")
+            .setItems(options) { _, which ->
+                when (which) {
+                    0 -> {
+                        checkLocationPermission()
+                    }
+                    1 -> {
+                        val intent = Intent(
+                            this,
+                            ChooseLocationActivity::class.java
+                        )
+                        chooseLocationLauncher.launch(intent)
+                    }
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,9 +134,10 @@ class RequestAssistanceActivity : AppCompatActivity() {
             openCamera()
         }
 
-        findViewById<Button>(R.id.btn_get_location).setOnClickListener {
-            checkLocationPermission()
-        }
+        findViewById<Button>(R.id.btn_get_location)
+            .setOnClickListener {
+                showLocationOptions()
+            }
 
         findViewById<Button>(R.id.btn_submit_request).setOnClickListener {
             val truckReg = etTruckReg.text.toString()
@@ -113,6 +163,12 @@ class RequestAssistanceActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Failed to submit request", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        findViewById<ImageView>(R.id.btn_back).setOnClickListener {
+            val customerIntent = Intent(this@RequestAssistanceActivity, CustomerDashboardActivity::class.java)
+            startActivity(customerIntent)
+            finish()
         }
     }
 
@@ -142,25 +198,56 @@ class RequestAssistanceActivity : AppCompatActivity() {
     }
 
     private fun checkLocationPermission() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
-        } else {
+        val fineLocation = ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+        val coarseLocation = ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
+        if (fineLocation || coarseLocation) {
             getLastLocation()
+        } else {
+            requestPermissionLauncher.launch(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
+            )
         }
     }
 
     private fun getLastLocation() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            fusedLocationClient.lastLocation.addOnSuccessListener { location: Location? ->
-                if (location != null) {
-                    latitude = location.latitude
-                    longitude = location.longitude
-                    tvLocationStatus.text = "Location: Attached (${String.format("%.4f", latitude)}, ${String.format("%.4f", longitude)})"
-                    Toast.makeText(this, "Location captured!", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(this, "Unable to get location. Make sure GPS is on.", Toast.LENGTH_SHORT).show()
+        val fineLocation = ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+        val coarseLocation = ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
+        if (!fineLocation && !coarseLocation) {
+            return
+        }
+        try {
+            fusedLocationClient.lastLocation
+                .addOnSuccessListener { location: Location? ->
+                    if (location != null) {
+                        latitude = location.latitude
+                        longitude = location.longitude
+                        locationSelected = true
+                        tvLocationStatus.text = "Location: Current location attached"
+
+                        Toast.makeText(this, "Last known location captured!", Toast.LENGTH_SHORT).show()
+
+                    } else {
+
+                        locationSelected = false
+                        latitude = 0.0
+                        longitude = 0.0
+
+                        tvLocationStatus.text = "Location unavailable. Choose a location on the map."
+
+                        Toast.makeText(this, "Unable to get your last location. Please choose a location on the map.", Toast.LENGTH_LONG).show()
+                    }
                 }
-            }
+                .addOnFailureListener {
+
+                    locationSelected = false
+                    latitude = 0.0
+                    longitude = 0.0
+
+                    tvLocationStatus.text = "Location: Not attached"
+
+                    Toast.makeText(this, "Could not retrieve location. Please choose it on the map.", Toast.LENGTH_LONG).show()
+                }
+        } catch (e: SecurityException) {
+            Toast.makeText(this, "Location permission is required.", Toast.LENGTH_SHORT).show()
         }
     }
 }

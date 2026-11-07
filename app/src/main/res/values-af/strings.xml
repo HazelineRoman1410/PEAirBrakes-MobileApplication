@@ -1,0 +1,109 @@
+
+<resources>
+    <string name="loading_text">Laai...</string>
+    <string name="login_title">Teken Aan</string>
+    <string name="register_title">Registreer</string>
+    <string name="email_hint">E-posadres</string>
+    <string name="password_hint">Wagwoord</string>
+    <string name="full_name_hint">Volle Naam</string>
+    <string name="is_technician">Registreer as Tegnikus</string>
+    <string name="dont_have_account">Het jy nie \'n rekening nie? Registreer</string>
+    <string name="already_have_account">Het jy reeds \'n rekening? Teken Aan</string>
+    <string name="choose_role">Kies Jou Rol</string>
+    <string name="register_customer">Registreer as Kliënt</string>
+    <string name="register_technician">Registreer as Tegnikus</string>
+    <string name="customer_reg_title">Kliëntregistrasie</string>
+    <string name="technician_reg_title">Tegnikusregistrasie</string>
+    <string name="tech_specialty">Kies Tegnikusspesialiteit</string>
+    <string-array name="technician_specialties">
+        <item>Kies spesialiteit</item>
+        <item>Lugremspesialis</item>
+        <item>Vragmotor-enjinwerktuigkundige</item>
+        <item>Sleepwawerktuigkundige</item>
+        <item>Ratkasspesialis</item>
+        <item>Koppelaarspesialis</item>
+        <item>Veringstelselspesialis</item>
+        <item>Stuurstelselspesialis</item>
+        <item>Vragmotorelektriese spesialis</item>
+        <item>Dieselbrandstofinspuitingspesialis</item>
+        <item>Hidrouliese stelselspesialis</item>
+        <item>Verkoelingstelselspesialis</item>
+        <item>Uitlaatstelselspesialis</item>
+        <item>Wiel- en bandspesialis</item>
+        <item>Vragmotordiagnostiekspesialis</item>
+        <item>Algemene vragmotorwerktuigkundige</item>
+        <item>Ander</item>
+    </string-array>
+    <string name="phone_hint">Telefoonnommer</string>
+    <string name="company_name_hint">Maatskappynaam (Opsioneel)</string>
+    <string name="company_address_hint">Maatskappyadres (Opsioneel)</string>
+    <string name="verification_required">Maatskappyverifikasie Vereis</string>
+    <string name="scan_qr">Skandeer Verifikasie QR-kode</string>
+    <string name="status_not_verified">Status: Nie Geverifieer Nie</string>
+    <string name="status_verified">Status: Geverifieer</string>
+    <string name="tech_dashboard_title">Tegnikuskontroleskerm</string>
+    <string name="active_breakdowns">Aktiewe Voertuigonklaarrakings</string>
+    <string name="completed_jobs">Voltooide Werkopdragte</string>
+    <string name="add_diesel_slip">Voeg Dieselstrokie By</string>
+    <string name="log_breakdown">Teken Voertuigonklaarraking Aan</string>
+    <string name="diesel_slips_title">Dieselstrokies</string>
+    <string name="add_new_slip">Voeg Nuwe Strokie By</string>
+    <string name="slip_preview">Strokievoorskou</string>
+    <string name="diesel_slip_record">Dieselstrokie Rekord</string>
+    <string name="job_card_title">Werkkaart</string>
+    <string name="start_km">Begin KM</string>
+    <string name="arrived">Aangekom</string>
+    <string name="submit_job">Dien Werkkaart In</string>
+    <string name="truck_description">Vragmotorlaailogo</string>
+    <string name="customer_dashboard">Kliëntekontroleskerm</string>
+    <string name="request_assistance">Versoek Bystand</string>
+    <string name="request_roadside_assistance">Versoek Padbystand</string>
+    <string name="view_requests">Bekyk Versoeke</string>
+    <string name="my_requests_history">My Versoekgeskiedenis</string>
+    <string name="view_settings">Bekyk Instellings</string>
+    <string name="customer_settings_lbl">Kliëntinstellings</string>
+    <string name="logout">Teken Af</string>
+    <string name="customer_logout">Kliënt Teken Af</string>
+    <string name="customer_settings">Kliëntinstellings</string>
+    <string name="languages">Kliënttale:</string>
+    <string name="english">Engels</string>
+    <string name="xhosa">Xhosa</string>
+    <string name="tswana">Tswana</string>
+    <string name="afrikaans">Afrikaans</string>
+    <string name="technician_settings">Tegnikusinstellings</string>
+    <string name="technician_languages">Tegnikustale:</string>
+    <string name="technician_english">Engels</string>
+    <string name="technician_afrikaans">Afrikaans</string>
+    <string name="technician_xhosa">Xhosa</string>
+    <string name="technician_tswana">Tswana</string>
+    <string name="request_assistance_label">Versoek Bystand</string>
+    <string name="truck_registration_number">Vragmotorregistrasienommer</string>
+    <string name="describe_the_problem">Beskryf die probleem...</string>
+    <string name="take_photo_of_problem">Neem Foto van die Probleem</string>
+    <string name="attach_my_pin_location">Heg My Ligging Aan</string>
+    <string name="location_not_attached">Ligging: Nie Aangeheg Nie</string>
+    <string name="submit_assistance_request">Dien Bystandsversoek In</string>
+    <string name="job_card">Werkkaart</string>
+    <string name="started_not_started">Begin: Nog Nie Begin Nie</string>
+    <string name="travel_tracking">Reisopsporing</string>
+    <string name="start_kilm">Begin KM</string>
+    <string name="arrived_destinations">Aangekom</string>
+    <string name="status_ready">Status: Gereed</string>
+    <string name="truck_details">Vragmotorbesonderhede</string>
+    <string name="truck_registration">Vragmotorregistrasie</string>
+    <string name="truck_make">Vragmotorfabrikaat</string>
+    <string name="truck_odometer_km">Vragmotor Kilometerteller (KM)</string>
+    <string name="problem_description">Probleembeskrywing</string>
+    <string name="describe_the_problem_and_work_done">Beskryf die probleem en werk wat gedoen is</string>
+    <string name="parts_used">Gebruikte Onderdele</string>
+    <string name="list_parts_used">Lys die gebruikte onderdele...</string>
+    <string name="add_photos_optional">Voeg Foto\'s By (Opsioneel)</string>
+    <string name="refused_repairs">Herstelwerk Wat Geweier Is</string>
+    <string name="describe_refused_repairs">Beskryf die herstelwerk wat geweier is...</string>
+    <string name="photo_of_refused_work">Foto van Geweierde Werk</string>
+    <string name="driver_signature">Bestuurder se Handtekening</string>
+    <string name="clear_signature">Vee Handtekening Uit</string>
+    <string name="submit_job_card">Dien Werkkaart In</string>
+    <string name="dark_mode">Donker Modus:</string>
+    <string name="technician_dark_mode">Donker Modus</string>
+</resources>

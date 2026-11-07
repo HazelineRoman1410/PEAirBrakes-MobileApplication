@@ -10,6 +10,7 @@
     app:cardElevation="4dp">
 
     <LinearLayout
+        android:id="@+id/active_breakdown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -24,9 +25,9 @@
                 android:id="@+id/iv_breakdown_photo"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleType="centerCrop"
                 android:background="#DDDDDD"
-                android:contentDescription="Breakdown Photo" />
+                android:contentDescription="Breakdown Photo"
+                android:scaleType="centerCrop" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -58,8 +59,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:maxLines="2"
                     android:ellipsize="end"
+                    android:maxLines="2"
                     android:textColor="@color/black"
                     tools:text="Air leak on trailer brakes near rear axle." />
             </LinearLayout>
@@ -71,10 +72,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="NAVIGATE TO LOCATION"
-            android:textColor="@color/red"
             android:drawableStart="@android:drawable/ic_menu_directions"
-            android:drawablePadding="8dp" />
+            android:drawablePadding="8dp"
+            android:text="NAVIGATE TO LOCATION"
+            android:textColor="@color/red" />
 
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.card.MaterialCardView
@@ -28,6 +30,30 @@ class CustomerDashboardActivity : AppCompatActivity() {
         findViewById<MaterialCardView>(R.id.card_view_requests).setOnClickListener {
             Toast.makeText(this, "View Request History still to be implemented in the future", Toast.LENGTH_SHORT).show()
 
+        }
+        findViewById<MaterialCardView>(R.id.card_customer_settings).setOnClickListener {
+            startActivity(Intent(this, CustomerSettingActivity::class.java))
+        }
+        findViewById<MaterialCardView>(R.id.card_customer_logout).setOnClickListener {
+            AppCompatDelegate.setApplicationLocales(
+                LocaleListCompat.forLanguageTags("en")
+            )
+
+            val sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE)
+
+            sharedPreferences.edit()
+                .putBoolean("DarkMode", false)
+                .apply()
+
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+            val intent = Intent(this, LoginActivity::class.java)
+
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or
+                    Intent.FLAG_ACTIVITY_CLEAR_TASK
+
+            startActivity(intent)
+            finish()
         }
     }
 }

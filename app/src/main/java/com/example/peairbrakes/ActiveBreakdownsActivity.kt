@@ -17,6 +17,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import java.io.File
 import java.util.Locale
 
 class ActiveBreakdownsActivity : AppCompatActivity() {
@@ -53,6 +54,14 @@ class ActiveBreakdownsActivity : AppCompatActivity() {
         rv.adapter = adapter
 
         refreshList()
+
+        val btnBack = findViewById<ImageView>(R.id.btn_back)
+
+        btnBack.setOnClickListener {
+            val technicianIntent = Intent(this@ActiveBreakdownsActivity, TechnicianDashboardActivity::class.java)
+            startActivity(technicianIntent)
+            finish()
+        }
     }
 
     private fun refreshList() {
@@ -81,6 +90,8 @@ class ActiveBreakdownsAdapter(
         val tvTime: TextView = view.findViewById(R.id.tv_timestamp)
         val tvDesc: TextView = view.findViewById(R.id.tv_description)
         val btnNav: Button = view.findViewById(R.id.btn_view_location)
+
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -95,9 +106,17 @@ class ActiveBreakdownsAdapter(
         holder.tvTime.text = "Logged: ${req.timestamp}"
         holder.tvDesc.text = req.description
 
-        if (req.photoPath.isNotEmpty()) {
+        if (req.photoPath.isNotEmpty() && File(req.photoPath).exists()) {
             val bitmap = BitmapFactory.decodeFile(req.photoPath)
-            holder.ivPhoto.setImageBitmap(bitmap)
+
+            if (bitmap != null) {
+                holder.ivPhoto.setImageBitmap(bitmap)
+                holder.ivPhoto.visibility = View.VISIBLE
+            } else {
+                holder.ivPhoto.visibility = View.GONE
+            }
+        } else {
+            holder.ivPhoto.visibility = View.GONE
         }
 
         holder.btnNav.setOnClickListener { onNavigateClick(req) }

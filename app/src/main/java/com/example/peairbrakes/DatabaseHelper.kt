@@ -179,27 +179,34 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         return this.writableDatabase.insert(TABLE_REQUESTS, null, values) != -1L
     }
 
+
     fun getAssignedJobs(techEmail: String): List<AssistanceRequest> {
         val list = mutableListOf<AssistanceRequest>()
-        val cursor = this.readableDatabase.query(TABLE_REQUESTS, null, "$COLUMN_ASSIGNED_TO=?", arrayOf(techEmail), null, null, "$COLUMN_TIMESTAMP DESC")
+        val db = this.readableDatabase
+        val selection = "$COLUMN_ASSIGNED_TO = ? OR $COLUMN_ASSIGNED_TO IS NULL OR $COLUMN_ASSIGNED_TO = ''"
+        val cursor = db.query(TABLE_REQUESTS, null, selection,
+            arrayOf(techEmail), null, null, "$COLUMN_TIMESTAMP DESC")
         if (cursor.moveToFirst()) {
             do {
-                list.add(AssistanceRequest(
-                    id = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_REQ_ID)),
-                    userEmail = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_USER_EMAIL)),
-                    truckReg = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TRUCK_REG)),
-                    description = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DESCRIPTION)),
-                    photoPath = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_PHOTO_PATH)),
-                    latitude = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_LATITUDE)),
-                    longitude = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_LONGITUDE)),
-                    assignedTo = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_ASSIGNED_TO)),
-                    timestamp = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TIMESTAMP))
-                ))
+                list.add(
+                    AssistanceRequest(
+                        id = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_REQ_ID)),
+                        userEmail = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_USER_EMAIL)),
+                        truckReg = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TRUCK_REG)),
+                        description = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DESCRIPTION)),
+                        photoPath = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_PHOTO_PATH)),
+                        latitude = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_LATITUDE)),
+                        longitude = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_LONGITUDE)),
+                        assignedTo = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_ASSIGNED_TO)) ?: "",
+                        timestamp = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TIMESTAMP))
+                    )
+                )
             } while (cursor.moveToNext())
         }
         cursor.close()
         return list
     }
+
 
     fun updateJobCard(jobCard: JobCard): Boolean {
         val db = this.writableDatabase
@@ -248,6 +255,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         cursor.close()
         return null
     }
+
 }
 
 data class User(val email: String, val password: String, val name: String, val role: String, val phone: String = "", val companyName: String = "", val companyAddress: String = "", val specialty: String = "")

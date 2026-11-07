@@ -50,19 +50,8 @@ class LoginActivity : AppCompatActivity() {
                 }
 
                 Toast.makeText(this, "Welcome back, ${user.name}!", Toast.LENGTH_SHORT).show()
-                
-                val intent = if (user.role == "Technician") {
-                    // Insert sample job for demonstration
-                    val sampleReq = AssistanceRequest(
-                        userEmail = "customer@example.com",
-                        truckReg = "CA 123-456",
-                        description = "Air leak on trailer brakes near rear axle.",
-                        latitude = -33.9249, // Cape Town
-                        longitude = 18.4241,
-                        assignedTo = user.email
-                    )
-                    db.addAssistanceRequest(sampleReq)
 
+                val intent = if (user.role == "Technician") {
                     Intent(this, TechnicianDashboardActivity::class.java)
                 } else {
                     Intent(this, CustomerDashboardActivity::class.java)

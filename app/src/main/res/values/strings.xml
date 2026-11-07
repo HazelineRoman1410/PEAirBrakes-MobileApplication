@@ -1,28 +1,47 @@
 <resources>
-    <string name="app_name">PeAirbrakes</string>
-    <string name="pe_airbrakes">PE AIRBRAKES</string>
-    <string name="loading_text">Loading&#8230;</string>
-    <string name="login_title">Login</string>
-    <string name="register_title">Register</string>
-    <string name="email_hint">Email</string>
-    <string name="password_hint">Password</string>
-    <string name="full_name_hint">Full Name</string>
-    <string name="is_technician">Register as Technician</string>
-    <string name="dont_have_account">Don\'t have an account? Register</string>
-    <string name="already_have_account">Already have an account? Login</string>
-    <string name="choose_role">Choose Your Role</string>
-    <string name="register_customer">Register as Customer</string>
-    <string name="register_technician">Register as Technician</string>
-    <string name="customer_reg_title">Customer Registration</string>
-    <string name="technician_reg_title">Technician Registration</string>
-    <string name="tech_specialty">Technician Specialty</string>
-    <string name="phone_hint">Phone Number</string>
-    <string name="company_name_hint">Company Name</string>
-    <string name="company_address_hint">Company Address</string>
-    <string name="verification_required">Company Verification Required</string>
-    <string name="scan_qr">Scan Verification QR</string>
-    <string name="status_not_verified">Status: Not Verified</string>
-    <string name="status_verified">Status: Verified</string>
+    <string name="app_name" translatable="false">PeAirbrakes</string>
+    <string name="pe_airbrakes" translatable="false">PE AIRBRAKES</string>
+    <string name="loading_text" translatable="false">Loading&#8230;</string>
+    <string name="login_title" translatable="false">Login</string>
+    <string name="register_title" translatable="false">Register</string>
+    <string name="email_hint" translatable="false">Email</string>
+    <string name="password_hint" translatable="false">Password</string>
+    <string name="full_name_hint" translatable="false">Full Name</string>
+    <string name="is_technician" translatable="false">Register as Technician</string>
+    <string name="dont_have_account" translatable="false">Don\'t have an account? Register</string>
+    <string name="already_have_account" translatable="false">Already have an account? Login</string>
+    <string name="choose_role" translatable="false">Choose Your Role</string>
+    <string name="register_customer" translatable="false">Register as Customer</string>
+    <string name="register_technician" translatable="false">Register as Technician</string>
+    <string name="customer_reg_title" translatable="false">Customer Registration</string>
+    <string name="technician_reg_title" translatable="false">Technician Registration</string>
+    <string name="tech_specialty">Select Technician Specialty</string>
+    <string-array name="technician_specialties">
+        <item>Select Specialty</item>
+        <item>Air Brake Specialist</item>
+        <item>Truck Engine Mechanic</item>
+        <item>Trailer Mechanic</item>
+        <item>Transmission Specialist</item>
+        <item>Clutch Specialist</item>
+        <item>Suspension Specialist</item>
+        <item>Steering System Specialist</item>
+        <item>Truck Electrical Specialist</item>
+        <item>Diesel Fuel Injection Specialist</item>
+        <item>Hydraulic Systems Specialist</item>
+        <item>Cooling System Specialist</item>
+        <item>Exhaust System Specialist</item>
+        <item>Wheel and Tyre Specialist</item>
+        <item>Truck Diagnostics Specialist</item>
+        <item>General Truck Mechanic</item>
+        <item>Other</item>
+    </string-array>
+    <string name="phone_hint" translatable="false">Phone Number</string>
+    <string name="company_name_hint" translatable="false">Company Name(Optional)</string>
+    <string name="company_address_hint" translatable="false">Company Address(Optional)</string>
+    <string name="verification_required" translatable="false">Company Verification Required</string>
+    <string name="scan_qr" translatable="false">Scan Verification QR</string>
+    <string name="status_not_verified" translatable="false">Status: Not Verified</string>
+    <string name="status_verified" translatable="false">Status: Verified</string>
     <string name="tech_dashboard_title">Technician Dashboard</string>
     <string name="active_breakdowns">Active Breakdowns</string>
     <string name="completed_jobs">Completed Jobs</string>
@@ -37,4 +56,55 @@
     <string name="arrived">Arrived</string>
     <string name="submit_job">Submit Job Card</string>
     <string name="truck_description">Truck loading logo</string>
+    <string name="customer_dashboard">Customer Dashboard</string>
+    <string name="request_assistance">Request Assistance</string>
+    <string name="request_roadside_assistance">Request Roadside Assistance</string>
+    <string name="view_requests">View Requests</string>
+    <string name="my_requests_history">My Requests History</string>
+    <string name="view_settings">View Settings</string>
+    <string name="customer_settings_lbl">Customer Settings</string>
+    <string name="logout">Logout</string>
+    <string name="customer_logout">Customer Logout</string>
+    <string name="customer_settings">Customer Settings</string>
+    <string name="languages">Customer Languages:</string>
+    <string name="english">English</string>
+    <string name="xhosa">Xhosa</string>
+    <string name="tswana">Tswana</string>
+    <string name="afrikaans">Afrikaans</string>
+    <string name="technician_settings">Technician Settings</string>
+    <string name="technician_languages">Technician Languages:</string>
+    <string name="technician_english">English</string>
+    <string name="technician_afrikaans">Afrikaans</string>
+    <string name="technician_xhosa">Xhosa</string>
+    <string name="technician_tswana">Tswana</string>
+    <string name="request_assistance_label">Request Assistance</string>
+    <string name="truck_registration_number">Truck Registration Number</string>
+    <string name="describe_the_problem">Describe the problem...</string>
+    <string name="take_photo_of_problem">Take Photo of Problem</string>
+    <string name="attach_my_pin_location">Attach My Pin Location</string>
+    <string name="location_not_attached">Location: Not attached</string>
+    <string name="submit_assistance_request">Submit Assistance Request</string>
+    <string name="job_card">Job Card</string>
+    <string name="started_not_started">Started: Not started</string>
+    <string name="travel_tracking">Travel Tracking</string>
+    <string name="start_kilm">Start KM</string>
+    <string name="arrived_destinations">Arrived</string>
+    <string name="status_ready">Status: Ready</string>
+    <string name="truck_details">Truck Details</string>
+    <string name="truck_registration">Truck Registration</string>
+    <string name="truck_make">Truck Make</string>
+    <string name="truck_odometer_km">Truck Odometer (KM)</string>
+    <string name="problem_description">Problem Description</string>
+    <string name="describe_the_problem_and_work_done">Describe the problem and work done</string>
+    <string name="parts_used">Parts Used</string>
+    <string name="list_parts_used">List parts used...</string>
+    <string name="add_photos_optional">Add Photos (Optional)</string>
+    <string name="refused_repairs">Refused Repairs</string>
+    <string name="describe_refused_repairs">Describe refused repairs...</string>
+    <string name="photo_of_refused_work">Photo of Refused Work</string>
+    <string name="driver_signature">Driver Signature</string>
+    <string name="clear_signature">Clear Signature</string>
+    <string name="submit_job_card">Submit Job Card</string>
+    <string name="dark_mode">Dark Mode:</string>
+    <string name="technician_dark_mode">Dark Mode</string>
 </resources>

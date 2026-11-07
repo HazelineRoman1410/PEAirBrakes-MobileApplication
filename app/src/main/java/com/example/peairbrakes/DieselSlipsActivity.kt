@@ -66,6 +66,14 @@ class DieselSlipsActivity : AppCompatActivity() {
         }
 
         refreshList()
+
+        val btnBack = findViewById<ImageView>(R.id.btn_back)
+
+        btnBack.setOnClickListener {
+            val technicianIntent = Intent(this@DieselSlipsActivity, TechnicianDashboardActivity::class.java)
+            startActivity(technicianIntent)
+            finish()
+        }
     }
 
     private fun refreshList() {

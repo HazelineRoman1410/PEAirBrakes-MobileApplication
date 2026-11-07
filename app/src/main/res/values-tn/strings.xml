@@ -1,0 +1,109 @@
+
+<resources>
+    <string name="loading_text">E a laisa...</string>
+    <string name="login_title">Tsena</string>
+    <string name="register_title">Ikwadise</string>
+    <string name="email_hint">Aterese ya Imeile</string>
+    <string name="password_hint">Phasewete</string>
+    <string name="full_name_hint">Maina a a Feletseng</string>
+    <string name="is_technician">Ikwadise jaaka Setegeniki</string>
+    <string name="dont_have_account">Ga o na akhaonto? Ikwadise</string>
+    <string name="already_have_account">O setse o na le akhaonto? Tsena</string>
+    <string name="choose_role">Tlhopha Seabe sa Gago</string>
+    <string name="register_customer">Ikwadise jaaka Moreki</string>
+    <string name="register_technician">Ikwadise jaaka Setegeniki</string>
+    <string name="customer_reg_title">Kwadiso ya Moreki</string>
+    <string name="technician_reg_title">Kwadiso ya Setegeniki</string>
+    <string name="tech_specialty">Tlhopha Bokgoni jwa Setegeniki</string>
+    <string-array name="technician_specialties">
+        <item>Tlhopha bokgoni</item>
+        <item>Moitseanape wa mariki a moya</item>
+        <item>Makheniki wa enjene ya teraka</item>
+        <item>Makheniki wa tereilara</item>
+        <item>Moitseanape wa gearbox</item>
+        <item>Moitseanape wa clutch</item>
+        <item>Moitseanape wa suspension</item>
+        <item>Moitseanape wa tsamaiso ya setereng</item>
+        <item>Moitseanape wa motlakase wa teraka</item>
+        <item>Moitseanape wa go tsenya leokwane la diesel</item>
+        <item>Moitseanape wa hydraulic</item>
+        <item>Moitseanape wa tsamaiso ya tsidifatso</item>
+        <item>Moitseanape wa tsamaiso ya exhaust</item>
+        <item>Moitseanape wa maotwana le dithaere</item>
+        <item>Moitseanape wa go sekaseka mathata a diteraka</item>
+        <item>Makheniki wa kakaretso wa diteraka</item>
+        <item>Tse Dingwe</item>
+    </string-array>
+    <string name="phone_hint">Nomoro ya Mogala</string>
+    <string name="company_name_hint">Leina la Khampani (Ga go patelediwe)</string>
+    <string name="company_address_hint">Aterese ya Khampani (Ga go patelediwe)</string>
+    <string name="verification_required">Go Tlhokega Netefatso ya Khampani</string>
+    <string name="scan_qr">Skena Khoutu ya QR ya Netefatso</string>
+    <string name="status_not_verified">Maemo: Ga e a Netefadiwa</string>
+    <string name="status_verified">Maemo: E Netefaditswe</string>
+    <string name="tech_dashboard_title">Sekirini sa Taolo sa Setegeniki</string>
+    <string name="active_breakdowns">Diphoso tsa Dilori tse di sa Baakanngwang</string>
+    <string name="completed_jobs">Ditiro tse di Feditsoeng</string>
+    <string name="add_diesel_slip">Tsenya Setlankana sa Dizili</string>
+    <string name="log_breakdown">Kwala Bothata jwa Lori</string>
+    <string name="diesel_slips_title">Dibukana tsa Dizili</string>
+    <string name="add_new_slip">Tsenya Setlankana se Sesha</string>
+    <string name="slip_preview">Tebego ya Setlankana</string>
+    <string name="diesel_slip_record">Rekoto ya Setlankana sa Dizili</string>
+    <string name="job_card_title">Karata ya Tiro</string>
+    <string name="start_km">KM ya Tshimologo</string>
+    <string name="arrived">Ke Gorogile</string>
+    <string name="submit_job">Romela Karata ya Tiro</string>
+    <string name="truck_description">Letshwao la go Laola Lori</string>
+    <string name="customer_dashboard">Sekirini sa Taolo sa Moreki</string>
+    <string name="request_assistance">Kopa Thuso</string>
+    <string name="request_roadside_assistance">Kopa Thuso mo Tseleng</string>
+    <string name="view_requests">Leba Dikopo</string>
+    <string name="my_requests_history">Hisitori ya Dikopo tsa Me</string>
+    <string name="view_settings">Leba Dipeakanyo</string>
+    <string name="customer_settings_lbl">Dipeakanyo tsa Moreki</string>
+    <string name="logout">Tswa</string>
+    <string name="customer_logout">Moreki o a Tswa</string>
+    <string name="customer_settings">Dipeakanyo tsa Moreki</string>
+    <string name="languages">Dipuo tsa Moreki:</string>
+    <string name="english">Seesemane</string>
+    <string name="xhosa">Se-Xhosa</string>
+    <string name="tswana">Setswana</string>
+    <string name="afrikaans">Seburu</string>
+    <string name="technician_settings">Dipeakanyo tsa Setegeniki</string>
+    <string name="technician_languages">Dipuo tsa Setegeniki:</string>
+    <string name="technician_english">Seesemane</string>
+    <string name="technician_afrikaans">Seburu</string>
+    <string name="technician_xhosa">Se-Xhosa</string>
+    <string name="technician_tswana">Setswana</string>
+    <string name="request_assistance_label">Kopa Thuso</string>
+    <string name="truck_registration_number">Nomoro ya Kwadiso ya Lori</string>
+    <string name="describe_the_problem">Tlhalosa bothata...</string>
+    <string name="take_photo_of_problem">Tsaya Setshwantsho sa Bothata</string>
+    <string name="attach_my_pin_location">Golaganya Lefelo la Me</string>
+    <string name="location_not_attached">Lefelo: Ga le a Golaganngwa</string>
+    <string name="submit_assistance_request">Romela Kopo ya Thuso</string>
+    <string name="job_card">Karata ya Tiro</string>
+    <string name="started_not_started">Tshimololo: Ga e ise e Simolole</string>
+    <string name="travel_tracking">Go Sala Morago Loeto</string>
+    <string name="start_kilm">KM ya Tshimologo</string>
+    <string name="arrived_destinations">Ke Gorogile</string>
+    <string name="status_ready">Maemo: E Siametse</string>
+    <string name="truck_details">Dintlha tsa Lori</string>
+    <string name="truck_registration">Kwadiso ya Lori</string>
+    <string name="truck_make">Mofuta wa Lori</string>
+    <string name="truck_odometer_km">Mitha ya Dikilometara tsa Lori (KM)</string>
+    <string name="problem_description">Tlhaloso ya Bothata</string>
+    <string name="describe_the_problem_and_work_done">Tlhalosa bothata le tiro e e dirilweng</string>
+    <string name="parts_used">Dikarolo tse di Dirisitsweng</string>
+    <string name="list_parts_used">Kwala dikarolo tse di dirisitsweng...</string>
+    <string name="add_photos_optional">Tsenya Ditshwantsho (Ga go patelediwe)</string>
+    <string name="refused_repairs">Dithulaganyo tsa go Baakanya tse di Gannweng</string>
+    <string name="describe_refused_repairs">Tlhalosa dithulaganyo tsa go baakanya tse di gannweng...</string>
+    <string name="photo_of_refused_work">Setshwantsho sa Tiro e e Gannweng</string>
+    <string name="driver_signature">Mosaeno wa Mokgweetsi</string>
+    <string name="clear_signature">Phimola Mosaeno</string>
+    <string name="submit_job_card">Romela Karata ya Tiro</string>
+    <string name="dark_mode">Mokgwa o o Lefifi:</string>
+    <string name="technician_dark_mode">Mokgwa o o Lefifi</string>
+</resources>

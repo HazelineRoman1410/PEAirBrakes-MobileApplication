@@ -12,22 +12,30 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="73dp"
+            android:layout_height="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_customer_technician_back" />
+
         <TextView
             android:id="@+id/tv_job_card_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Job Card"
+            android:text="@string/job_card"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/red"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_back" />
 
         <TextView
             android:id="@+id/tv_start_time_display"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Started: Not started"
+            android:text="@string/started_not_started"
             android:textColor="@android:color/darker_gray"
             app:layout_constraintTop_toBottomOf="@id/tv_job_card_title"
             app:layout_constraintStart_toStartOf="parent" />
@@ -51,7 +59,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Travel Tracking"
+                    android:text="@string/travel_tracking"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -65,7 +73,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Start KM"
+                        android:text="@string/start_kilm"
                         android:backgroundTint="@color/red" />
 
                     <View android:layout_width="8dp" android:layout_height="0dp" />
@@ -75,7 +83,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Arrived"
+                        android:text="@string/arrived_destinations"
                         android:enabled="false"
                         android:backgroundTint="@color/black" />
                 </LinearLayout>
@@ -85,7 +93,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Status: Ready" />
+                    android:text="@string/status_ready" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -94,7 +102,7 @@
             android:id="@+id/tv_label_truck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Truck Details"
+            android:text="@string/truck_details"
             android:textStyle="bold"
             android:layout_marginTop="24dp"
             app:layout_constraintTop_toBottomOf="@id/card_travel"
@@ -104,7 +112,7 @@
             android:id="@+id/et_truck_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Truck Registration"
+            android:hint="@string/truck_registration"
             android:inputType="textCapCharacters"
             app:layout_constraintTop_toBottomOf="@id/tv_label_truck" />
 
@@ -112,14 +120,14 @@
             android:id="@+id/et_truck_make"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Truck Make"
+            android:hint="@string/truck_make"
             app:layout_constraintTop_toBottomOf="@id/et_truck_reg" />
 
         <EditText
             android:id="@+id/et_kilometers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Truck Odometer (KM)"
+            android:hint="@string/truck_odometer_km"
             android:inputType="numberDecimal"
             app:layout_constraintTop_toBottomOf="@id/et_truck_make" />
 
@@ -128,7 +136,7 @@
             android:id="@+id/tv_label_problem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Problem Description"
+            android:text="@string/problem_description"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@id/et_kilometers"
@@ -138,7 +146,7 @@
             android:id="@+id/et_job_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Describe the problem and work done"
+            android:hint="@string/describe_the_problem_and_work_done"
             android:inputType="textMultiLine"
             android:minLines="3"
             android:gravity="top"
@@ -149,7 +157,7 @@
             android:id="@+id/tv_label_parts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Parts Used"
+            android:text="@string/parts_used"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@id/et_job_description"
@@ -159,7 +167,7 @@
             android:id="@+id/et_parts_used"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="List parts used..."
+            android:hint="@string/list_parts_used"
             android:inputType="textMultiLine"
             android:minLines="2"
             android:gravity="top"
@@ -170,7 +178,7 @@
             android:id="@+id/btn_job_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Photos (Optional)"
+            android:text="@string/add_photos_optional"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/black"
             app:layout_constraintTop_toBottomOf="@id/et_parts_used"
@@ -196,7 +204,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Refused Repairs"
+                    android:text="@string/refused_repairs"
                     android:textColor="@color/red"
                     android:textStyle="bold" />
 
@@ -204,7 +212,7 @@
                     android:id="@+id/et_refused_repairs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Describe refused repairs..."
+                    android:hint="@string/describe_refused_repairs"
                     android:inputType="textMultiLine"
                     android:layout_marginTop="8dp" />
 
@@ -212,7 +220,7 @@
                     android:id="@+id/btn_refused_photo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Photo of Refused Work"
+                    android:text="@string/photo_of_refused_work"
                     android:textSize="12sp"
                     android:backgroundTint="@color/red" />
             </LinearLayout>
@@ -223,28 +231,38 @@
             android:id="@+id/tv_label_signature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Driver Signature"
+            android:text="@string/driver_signature"
             android:textStyle="bold"
             android:layout_marginTop="24dp"
             app:layout_constraintTop_toBottomOf="@id/card_refused"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.example.peairbrakes.SignatureView
-            android:id="@+id/signature_view"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/signature_container"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@android:color/white"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_label_signature" />
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/red"
+            app:strokeWidth="2dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_signature">
 
+            <com.example.peairbrakes.SignatureView
+                android:id="@+id/signature_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
         <Button
             android:id="@+id/btn_clear_sig"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clear Signature"
+            android:text="@string/clear_signature"
             android:textColor="@color/red"
-            app:layout_constraintTop_toBottomOf="@id/signature_view"
+            app:layout_constraintTop_toBottomOf="@id/signature_container"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <!-- Submit -->
@@ -252,7 +270,7 @@
             android:id="@+id/btn_submit_job"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit Job Card"
+            android:text="@string/submit_job_card"
             android:backgroundTint="@color/red"
             android:padding="16dp"
             android:layout_marginTop="32dp"

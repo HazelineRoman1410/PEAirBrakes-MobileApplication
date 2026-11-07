@@ -24,6 +24,7 @@ import java.io.FileOutputStream
 import java.text.SimpleDateFormat
 import java.util.*
 
+
 class JobCardActivity : AppCompatActivity() {
 
     private lateinit var db: DatabaseHelper
@@ -132,6 +133,23 @@ class JobCardActivity : AppCompatActivity() {
             }
         }
 
+        signatureView.setOnTouchListener { view, event ->
+            when (event.action) {
+
+                android.view.MotionEvent.ACTION_DOWN,
+                android.view.MotionEvent.ACTION_MOVE -> {
+                    view.parent.requestDisallowInterceptTouchEvent(true)
+                }
+
+                android.view.MotionEvent.ACTION_UP,
+                android.view.MotionEvent.ACTION_CANCEL -> {
+                    view.parent.requestDisallowInterceptTouchEvent(false)
+                }
+            }
+
+            false
+        }
+
         findViewById<Button>(R.id.btn_job_photo).setOnClickListener {
             currentPhotoType = "Job"
             openCamera()
@@ -148,6 +166,12 @@ class JobCardActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btn_submit_job).setOnClickListener {
             submitJobCard()
+        }
+
+        findViewById<ImageView>(R.id.btn_back).setOnClickListener {
+            val activebreakdownIntent = Intent(this@JobCardActivity, ActiveBreakdownsActivity::class.java)
+            startActivity(activebreakdownIntent)
+            finish()
         }
     }
 

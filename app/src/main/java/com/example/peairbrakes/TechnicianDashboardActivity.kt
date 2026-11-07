@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.card.MaterialCardView
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 
 class TechnicianDashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +37,32 @@ class TechnicianDashboardActivity : AppCompatActivity() {
 
         findViewById<MaterialCardView>(R.id.card_log_breakdown).setOnClickListener {
             Toast.makeText(this, "Log Breakdown still to be implemented in the future", Toast.LENGTH_SHORT).show()
+        }
+
+        findViewById<MaterialCardView>(R.id.card_technician_settings).setOnClickListener {
+            startActivity(Intent(this, TechnicianSettingActivity::class.java))
+        }
+
+        findViewById<MaterialCardView>(R.id.card_technician_logout).setOnClickListener {
+            AppCompatDelegate.setApplicationLocales(
+                LocaleListCompat.forLanguageTags("en")
+            )
+
+            val sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE)
+
+            sharedPreferences.edit()
+                .putBoolean("DarkMode", false)
+                .apply()
+
+            AppCompatDelegate.setDefaultNightMode(
+                AppCompatDelegate.MODE_NIGHT_NO
+            )
+
+            val intent = Intent(this, LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or
+                    Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
         }
     }
 }

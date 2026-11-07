@@ -1,3 +1,4 @@
+
 package com.example.peairbrakes
 
 import android.content.Context
@@ -6,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +20,7 @@ class RegisterTechnicianActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_register_technician)
-        
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.register_technician_root)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -29,8 +31,9 @@ class RegisterTechnicianActivity : AppCompatActivity() {
 
         val etName = findViewById<EditText>(R.id.et_reg_name)
         val etEmail = findViewById<EditText>(R.id.et_reg_email)
-        val etSpecialty = findViewById<EditText>(R.id.et_tech_specialty)
+        val spinnerSpecialty = findViewById<Spinner>(R.id.spinner_tech_specialty)
         val etPassword = findViewById<EditText>(R.id.et_reg_password)
+
         val btnScanQr = findViewById<Button>(R.id.btn_scan_qr)
         val btnRegister = findViewById<Button>(R.id.btn_register)
         val tvGoToLogin = findViewById<TextView>(R.id.tv_go_to_login)
@@ -40,13 +43,17 @@ class RegisterTechnicianActivity : AppCompatActivity() {
         }
 
         btnRegister.setOnClickListener {
-            val name = etName.text.toString()
-            val email = etEmail.text.toString()
-            val specialty = etSpecialty.text.toString()
+            val name = etName.text.toString().trim()
+            val email = etEmail.text.toString().trim()
+            val specialty = spinnerSpecialty.selectedItem.toString()
             val password = etPassword.text.toString()
 
             if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill in all required fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            else if (spinnerSpecialty.selectedItemPosition == 0) {
+                Toast.makeText(this, "Please select your specialty", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             else if (!name.matches(Regex("^[a-zA-Z ]+$"))) {
@@ -54,7 +61,7 @@ class RegisterTechnicianActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             else if (!email.matches(Regex("^[A-Za-z0-9+_.-]+@(gmail\\.com|hotmail\\.com|yahoo\\.com)$"))) {
-                Toast.makeText(this, "Email must contain letters, numbers, +, _, ., or - before @, and end with @gmail.com, @hotmail.com, or @yahoo.com", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Email must end with @gmail.com, @hotmail.com, or @yahoo.com", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             else if (!password.matches(Regex("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@#\$%^&+=!]).{8,}$"))) {
@@ -62,7 +69,7 @@ class RegisterTechnicianActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-                val user = User(
+            val user = User(
                 email = email,
                 password = password,
                 name = name,
@@ -71,8 +78,9 @@ class RegisterTechnicianActivity : AppCompatActivity() {
             )
 
             if (db.addUser(user)) {
-                // Save user email to SharedPreferences
+
                 val sharedPref = getSharedPreferences("PeAirbrakesPrefs", Context.MODE_PRIVATE)
+
                 with(sharedPref.edit()) {
                     putString("user_email", user.email)
                     apply()
@@ -80,7 +88,8 @@ class RegisterTechnicianActivity : AppCompatActivity() {
 
                 Toast.makeText(this, "Technician Registered Successfully", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, TechnicianDashboardActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or
+                            Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
                 finish()
             } else {

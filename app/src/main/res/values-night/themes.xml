@@ -1,7 +1,37 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.PeAirbrakes" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application dark theme -->
+    <style name="Base.Theme.PeAirbrakes"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary Colours -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Colours -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background Colours -->
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+
+        <!-- Text Colours -->
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Navigation Bar -->
+        <item name="android:navigationBarColor">@color/background_dark</item>
+
     </style>
+
+    <style name="Theme.PeAirbrakes"
+        parent="Base.Theme.PeAirbrakes" />
+
 </resources>

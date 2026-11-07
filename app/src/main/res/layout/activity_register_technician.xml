@@ -49,12 +49,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp" />
 
-        <EditText
-            android:id="@+id/et_tech_specialty"
+        <Spinner
+            android:id="@+id/spinner_tech_specialty"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="@string/tech_specialty"
-            android:inputType="text"
+            android:entries="@array/technician_specialties"
+            android:prompt="@string/tech_specialty"
             app:layout_constraintTop_toBottomOf="@id/et_reg_email"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +67,7 @@
             android:hint="@string/password_hint"
             android:inputType="textPassword"
             android:autofillHints="password"
-            app:layout_constraintTop_toBottomOf="@id/et_tech_specialty"
+            app:layout_constraintTop_toBottomOf="@id/spinner_tech_specialty"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp" />

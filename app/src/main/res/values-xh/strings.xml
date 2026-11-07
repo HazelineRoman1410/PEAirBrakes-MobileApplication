@@ -1,0 +1,109 @@
+
+<resources>
+    <string name="loading_text">Iyalayisha...</string>
+    <string name="login_title">Ngena</string>
+    <string name="register_title">Bhalisa</string>
+    <string name="email_hint">Idilesi ye-imeyile</string>
+    <string name="password_hint">Igama lokugqitha</string>
+    <string name="full_name_hint">Amagama Apheleleyo</string>
+    <string name="is_technician">Bhalisa njengeGcisa</string>
+    <string name="dont_have_account">Awunayo iakhawunti? Bhalisa</string>
+    <string name="already_have_account">Sele unayo iakhawunti? Ngena</string>
+    <string name="choose_role">Khetha Indima Yakho</string>
+    <string name="register_customer">Bhalisa njengoMthengi</string>
+    <string name="register_technician">Bhalisa njengeGcisa</string>
+    <string name="customer_reg_title">Ubhaliso loMthengi</string>
+    <string name="technician_reg_title">Ubhaliso lweGcisa</string>
+    <string name="tech_specialty">Khetha Ubungcali beGcisa</string>
+    <string-array name="technician_specialties">
+        <item>Khetha ubungcali</item>
+        <item>Ingcali yeziqhoboshi zomoya</item>
+        <item>Umkhandi we-injini yelori</item>
+        <item>Umkhandi wetreyila</item>
+        <item>Ingcali yebhokisi yegiya</item>
+        <item>Ingcali ye-clutch</item>
+        <item>Ingcali yenkqubo yokunqunyanyiswa</item>
+        <item>Ingcali yenkqubo yokulawula</item>
+        <item>Ingcali yombane welori</item>
+        <item>Ingcali yokufakwa kwamafutha edizili</item>
+        <item>Ingcali yeenkqubo zehydraulic</item>
+        <item>Ingcali yenkqubo yokupholisa</item>
+        <item>Ingcali yenkqubo yokukhupha umsi</item>
+        <item>Ingcali yamavili namatayara</item>
+        <item>Ingcali yokuxilonga iilori</item>
+        <item>Umkhandi weelori jikelele</item>
+        <item>Okunye</item>
+    </string-array>
+    <string name="phone_hint">Inombolo yeFowuni</string>
+    <string name="company_name_hint">Igama leNkampani (Akuyomfuneko)</string>
+    <string name="company_address_hint">Idilesi yeNkampani (Akuyomfuneko)</string>
+    <string name="verification_required">Ukuqinisekiswa kweNkampani Kuyafuneka</string>
+    <string name="scan_qr">Skena iKhowudi ye-QR yoQinisekiso</string>
+    <string name="status_not_verified">Imeko: Ayiqinisekiswanga</string>
+    <string name="status_verified">Imeko: Iqinisekisiwe</string>
+    <string name="tech_dashboard_title">Iphaneli yoLawulo yeGcisa</string>
+    <string name="active_breakdowns">Iingxaki zeeLori Ezingekasonjululwa</string>
+    <string name="completed_jobs">Imisebenzi Egqityiweyo</string>
+    <string name="add_diesel_slip">Yongeza iSlip yeDizili</string>
+    <string name="log_breakdown">Rekhoda Ukonakala kweLori</string>
+    <string name="diesel_slips_title">IiSlip zeDizili</string>
+    <string name="add_new_slip">Yongeza iSlip Entsha</string>
+    <string name="slip_preview">Jonga iSlip</string>
+    <string name="diesel_slip_record">Irekhodi yeSlip yeDizili</string>
+    <string name="job_card_title">Ikhadi loMsebenzi</string>
+    <string name="start_km">I-KM yokuQala</string>
+    <string name="arrived">Ndifikile</string>
+    <string name="submit_job">Thumela Ikhadi loMsebenzi</string>
+    <string name="truck_description">Ilogo yokuLayisha iLori</string>
+    <string name="customer_dashboard">Iphaneli yoLawulo yoMthengi</string>
+    <string name="request_assistance">Cela Uncedo</string>
+    <string name="request_roadside_assistance">Cela Uncedo eNdleleni</string>
+    <string name="view_requests">Jonga Izicelo</string>
+    <string name="my_requests_history">Imbali Yezicelo Zam</string>
+    <string name="view_settings">Jonga Iisetingi</string>
+    <string name="customer_settings_lbl">Iisetingi zoMthengi</string>
+    <string name="logout">Phuma</string>
+    <string name="customer_logout">Umthengi Uyaphuma</string>
+    <string name="customer_settings">Iisetingi zoMthengi</string>
+    <string name="languages">Iilwimi zoMthengi:</string>
+    <string name="english">IsiNgesi</string>
+    <string name="xhosa">IsiXhosa</string>
+    <string name="tswana">ISetswana</string>
+    <string name="afrikaans">IsiBhulu</string>
+    <string name="technician_settings">Iisetingi zeGcisa</string>
+    <string name="technician_languages">Iilwimi zeGcisa:</string>
+    <string name="technician_english">IsiNgesi</string>
+    <string name="technician_afrikaans">IsiBhulu</string>
+    <string name="technician_xhosa">IsiXhosa</string>
+    <string name="technician_tswana">ISetswana</string>
+    <string name="request_assistance_label">Cela Uncedo</string>
+    <string name="truck_registration_number">Inombolo yoBhaliso lweLori</string>
+    <string name="describe_the_problem">Chaza ingxaki...</string>
+    <string name="take_photo_of_problem">Thatha iFoto yeNgxaki</string>
+    <string name="attach_my_pin_location">Qhoboshela Indawo Endikuyo</string>
+    <string name="location_not_attached">Indawo: Ayincanyathiselwanga</string>
+    <string name="submit_assistance_request">Thumela Isicelo soNcedo</string>
+    <string name="job_card">Ikhadi loMsebenzi</string>
+    <string name="started_not_started">Kuqalisiwe: Akukaqalwa</string>
+    <string name="travel_tracking">Ukulandelela Uhambo</string>
+    <string name="start_kilm">I-KM yokuQala</string>
+    <string name="arrived_destinations">Ndifikile</string>
+    <string name="status_ready">Imeko: Ilungile</string>
+    <string name="truck_details">Iinkcukacha zeLori</string>
+    <string name="truck_registration">Ubhaliso lweLori</string>
+    <string name="truck_make">Uhlobo lweLori</string>
+    <string name="truck_odometer_km">Imitha yeeKilomitha zeLori (KM)</string>
+    <string name="problem_description">Inkcazelo yeNgxaki</string>
+    <string name="describe_the_problem_and_work_done">Chaza ingxaki nomsebenzi owenziweyo</string>
+    <string name="parts_used">Amalungu Asetyenzisiweyo</string>
+    <string name="list_parts_used">Dwelisa amalungu asetyenzisiweyo...</string>
+    <string name="add_photos_optional">Yongeza Iifoto (Akuyomfuneko)</string>
+    <string name="refused_repairs">Ulungiso Olwaliweyo</string>
+    <string name="describe_refused_repairs">Chaza ulungiso olwaliweyo...</string>
+    <string name="photo_of_refused_work">Ifoto yoMsebenzi Owaliweyo</string>
+    <string name="driver_signature">Utyikityo loMqhubi</string>
+    <string name="clear_signature">Cima Utyikityo</string>
+    <string name="submit_job_card">Thumela Ikhadi loMsebenzi</string>
+    <string name="dark_mode">Imowudi Emnyama:</string>
+    <string name="technician_dark_mode">Imowudi Emnyama</string>
+</resources>
