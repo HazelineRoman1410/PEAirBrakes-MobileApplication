@@ -15,6 +15,9 @@ class TechnicianSettingActivity: AppCompatActivity() {
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(
+            AppCompatDelegate.MODE_NIGHT_NO
+        )
         super.onCreate(savedInstanceState)
         _binding = ActivityTechnicianSettingBinding.inflate(layoutInflater)
         setContentView(_binding!!.root)
