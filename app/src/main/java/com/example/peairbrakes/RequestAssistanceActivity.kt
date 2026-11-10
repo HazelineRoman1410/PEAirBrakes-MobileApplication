@@ -186,7 +186,7 @@ class RequestAssistanceActivity : AppCompatActivity() {
                 longitude = longitude
             )
 
-            if (db.addAssistanceRequest(request)) {
+            if (db.addAssistanceRequest(request) != -1L) {
                 Toast.makeText(this, "Assistance request submitted!", Toast.LENGTH_LONG).show()
                 finish()
             } else {

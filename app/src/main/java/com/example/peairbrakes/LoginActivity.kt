@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
         val tvGoToRegister = findViewById<TextView>(R.id.tv_go_to_register)
 
         btnLogin.setOnClickListener {
-            val email = etEmail.text.toString()
+            val email = etEmail.text.toString().trim()
             val password = etPassword.text.toString()
 
             if (email.isEmpty() || password.isEmpty()) {
@@ -46,7 +46,6 @@ class LoginActivity : AppCompatActivity() {
 
             val user = db.getUser(email)
             if (user != null && user.password == password) {
-                // Save user email to SharedPreferences
                 val sharedPref = getSharedPreferences("PeAirbrakesPrefs", Context.MODE_PRIVATE)
                 with(sharedPref.edit()) {
                     putString("user_email", user.email)
@@ -55,10 +54,10 @@ class LoginActivity : AppCompatActivity() {
 
                 Toast.makeText(this, "Welcome back, ${user.name}!", Toast.LENGTH_SHORT).show()
 
-                val intent = if (user.role == "Technician") {
-                    Intent(this, TechnicianDashboardActivity::class.java)
-                } else {
-                    Intent(this, CustomerDashboardActivity::class.java)
+                val intent = when (user.role) {
+                    "Technician" -> Intent(this, TechnicianDashboardActivity::class.java)
+                    "Administrator", "Admin" -> Intent(this, AdminDashboardActivity::class.java)
+                    else -> Intent(this, CustomerDashboardActivity::class.java)
                 }
                 
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
