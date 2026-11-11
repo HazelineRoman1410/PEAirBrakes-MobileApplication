@@ -199,7 +199,7 @@ class RequestAssistanceActivity : AppCompatActivity() {
                 longitude = longitude
             )
 
-            if (db.addAssistanceRequest(request)) {
+            if (db.addAssistanceRequest(request) != -1L) {
                 saveRequestToFirebase(
                     truckReg,
                     description

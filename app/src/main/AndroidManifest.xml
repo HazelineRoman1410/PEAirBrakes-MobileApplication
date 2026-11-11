@@ -69,6 +69,45 @@
         <activity
             android:name=".ChooseLocationActivity"
             android:exported="false" />
+        <activity
+            android:name=".AiAssistantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserManualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BreakdownAssessmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SafetyInspectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RepairProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SparePartsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReturnJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobMessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TechnicianPerformanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLiveMapActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
