@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "94486027821",
+    "firebase_url": "https://pe-airbrakes-dataflow-default-rtdb.firebaseio.com",
+    "project_id": "pe-airbrakes-dataflow",
+    "storage_bucket": "pe-airbrakes-dataflow.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94486027821:android:7474ffab719d64f182a2a4",
+        "android_client_info": {
+          "package_name": "za.co.peairbrakes.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYhc0m3dfR6UFHh4MxjYy8BDE82IrFLkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
