@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="loading_text">Iyalayisha...</string>
     <string name="login_title">Ngena</string>
@@ -106,4 +106,91 @@
     <string name="submit_job_card">Thumela Ikhadi loMsebenzi</string>
     <string name="dark_mode">Imowudi Emnyama:</string>
     <string name="technician_dark_mode">Imowudi Emnyama</string>
+    <string name="user_manual_title">Incwadi Yomsebenzisi kunye Noncedo Lwe-App</string>
+    <string name="manual_search_hint">Khangela kwincwadi yomsebenzisi...</string>
+    <string name="manual_no_results">Akukho zihloko zihambelana nokukhangela kwakho.</string>
+
+    <string name="category_all">Zonke</string>
+    <string name="category_customer">Umthengi</string>
+    <string name="category_technician">Igcisa</string>
+    <string name="category_faqs">Imibuzo Ebuzwa Rhoqo</string>
+
+    <string name="manual_tech_assignments_title">Ukwamkela &amp; Nokulawula Imisebenzi Yokonakala Kwezithuthi</string>
+    <string name="manual_tech_assignments_summary">Indlela yokwamkela okanye yokwala imisebenzi yokonakala kwezithuthi eyabelwe liCandelo Lothumelo.</string>
+    <string name="manual_tech_assignments_steps">INYATHELO 1: Vula iDashboard yakho yeTekhnishini uze ucofe ku Ukonakala Okusebenzayo.\nINYATHELO 2: Jonga inkcazelo yokonakala oyabelweyo, inombolo yobhaliso yelori kunye nendawo ekuyo.\nINYATHELO 3: Cofa u Yamkela Umsebenzi (okutshintsha isimo sakho sibe ku Endleleni) okanye u Yala Umsebenzi (unike isizathu sokuba iCandelo Lothumelo labele omnye).\nINYATHELO 4: Cofa u Ukhokelo Lwemephu ukuqalisa isikhokelo sendlela esiya kwindawo ekonakele kuyo isithuthi.</string>
+
+    <string name="manual_tech_safety_title">Uhlolo Lokhuseleko Lwasecaleni Kwendlela &amp; Nokudlulisela Phambili</string>
+    <string name="manual_tech_safety_summary">Uhlolo lokhuseleko olunyanzeliswayo lwendawo phambi kokuqala umsebenzi wokulungisa.</string>
+    <string name="manual_tech_safety_steps">INYATHELO 1: Wakufika kwindawo ekonakele kuyo isithuthi, cofa u Uhlolo Lokhuseleko.\nINYATHELO 2: Hlola izithuthi ezisendleleni, ukubekwa koonxantathu besilumkiso kunye nokuzinza komhlaba.\nINYATHELO 3: Khangela iPPE (ibhatyi neebhutsi) kunye nezithinteli zamavili zesithuthi.\nINYATHELO 4: Ukuba kukhuselekile, thumela ukuze uqhubeke. Ukuba AKUKHUSELEKANGA, vula u Akukhuselekanga ukuze uthumele isilumkiso esikhawulezileyo kwiCandelo Lothumelo.</string>
+
+    <string name="manual_tech_assessment_title">Uvavanyo Lokonakala &amp; Nokuthunyelwa Kwekowuteshini</string>
+    <string name="manual_tech_assessment_summary">Fumanisa iingxaki, qikelela ixesha lomsebenzi &amp; neentsimbi, uze uthumele ikowuteshini ukuze ivunywe nguMlawuli.</string>
+    <string name="manual_tech_assessment_steps">INYATHELO 1: Cofa u Uvavanyo &amp; Nekowuteshini kwikhadi lomsebenzi.\nINYATHELO 2: Gcwalisa iinkcukacha zelori (Uhlobo/Imodeli, iVIN, iOdometer, neenkcukacha zeNjini).\nINYATHELO 3: Bhala ingxaki efunyenweyo, unobangela kunye neziphumo zovavanyo.\nINYATHELO 4: Faka iiyure zomsebenzi eziqikelelweyo, ixabiso leentsimbi kunye neendleko zohambo.\nINYATHELO 5: Cofa u Bala Ikhowuteshini Iyonke kunye no Thumela Uvavanyo &amp; Nekowuteshini. Linda isaziso semvume yoMlawuli phambi kokuqala umsebenzi.</string>
+
+    <string name="manual_tech_progress_title">Ukulandelela Inkqubela Yokulungisa &amp; Nohlaziyo LweETA</string>
+    <string name="manual_tech_progress_summary">Papasha uhlaziyo lwamanqanaba omsebenzi kunye nexesha elitsha lokugqiba (ETA).</string>
+    <string name="manual_tech_progress_steps">INYATHELO 1: Cofa u Ingxelo Yenkqubela kwikhadi lomsebenzi elisebenzayo.\nINYATHELO 2: Khetha inqanaba lenkqubela (umz. Imibhobho Yomoya Ihlambulukile, Amagumbi Eziqhoboshi Atshintshiwe).\nINYATHELO 3: Faka inkcazelo yenkqubela kunye nexesha elitsha lokugqiba (ETA).\nINYATHELO 4: Cofa u Papasha Uhlaziyo Lwenkqubela ukuze wazise iCandelo Lothumelo kunye noMthengi.</string>
+
+    <string name="manual_tech_parts_title">Iintsimbi Ezisecaleni &amp; Nemvume Yomsebenzi Owongezelelweyo</string>
+    <string name="manual_tech_parts_summary">Bhala iintsimbi ezisetyenzisiweyo uze ucele imvume yeendleko ezongezelelweyo.</string>
+    <string name="manual_tech_parts_steps">INYATHELO 1: Cofa u Iintsimbi &amp; Nemvume.\nINYATHELO 2: Faka igama lentsimbi, inombolo yentsimbi yeOEM kunye nenani elisetyenzisiweyo kwikhadi lomsebenzi.\nINYATHELO 3: Ukuba kufunyenwe omnye umsebenzi ongaphezulu kobekucetyiwe, gcwalisa ifomu yeSicelo Somsebenzi Owongezelelweyo uze uyithumele kuMlawuli ukuze ivunywe.</string>
+
+    <string name="manual_tech_return_title">Ukuphawula Imisebenzi Ebuyiselwayo &amp; Nezikhalazo Zabathengi</string>
+    <string name="manual_tech_return_summary">Phawula ulungiso olungaphumelelanga okanye izikhalazo ukuze kubuyelwe emsebenzini.</string>
+    <string name="manual_tech_return_steps">INYATHELO 1: Ukuba ulungiso alukwazi ukugqitywa okanye aluphumelelanga, cofa u Phawula Ukubuyela.\nINYATHELO 2: Khetha isizathu sokuphawula (Ulungiso Aluphumelelanga, Kufuneka Ingcali, Iintsimbi Azifumaneki, njl.).\nINYATHELO 3: Nika iinkcukacha ezicacileyo uze uthumele kwiCandelo Lothumelo.</string>
+
+    <string name="manual_customer_assistance_title">Ukucela Uncedo Lwasecaleni Kwendlela</string>
+    <string name="manual_customer_assistance_summary">Indlela yokufaka isicelo sokonakala kwesithuthi kunye nokuncamathisela indawo ekuyo.</string>
+    <string name="manual_customer_assistance_steps">INYATHELO 1: Vula iDashboard yoMthengi uze ucofe ku Cela Uncedo Lwasecaleni Kwendlela.\nINYATHELO 2: Faka inombolo yobhaliso yelori uze uchaze ingxaki yokonakala.\nINYATHELO 3: Cofa u Thatha Ifoto Yengxaki ukuze ufumane ubungqina.\nINYATHELO 4: Cofa u Ncamathisela Indawo Yam Yephini ukusebenzisa iGPS okanye ukhethe indawo kwimephu.\nINYATHELO 5: Cofa u Thumela Isicelo Soncedo.</string>
+
+    <string name="manual_customer_tracking_title">Ukwabiwa Kwetekhnishini Ngexesha Lokwenyani &amp; Nokulandelela IETA</string>
+    <string name="manual_customer_tracking_summary">Landelela ukufika kwetekhnishini eyabelweyo uze uvume iikowuteshini zokulungisa.</string>
+    <string name="manual_customer_tracking_steps">INYATHELO 1: Vula iDashboard yoMthengi uze ucofe ku Imbali Yezicelo Zam.\nINYATHELO 2: Jonga igama letekhnishini eyabelweyo, iinkcukacha zoqhagamshelwano, isimo kunye nexesha lokufika (ETA).\nINYATHELO 3: Xa ikowuteshini ithunyelwe yitekhnishini, cofa isicelo sakho ukuze ujonge uze uvume ikowuteshini.</string>
+
+    <string name="manual_faq_sos_title">Inqaku Likaxakeka LeSOS</string>
+    <string name="manual_faq_sos_summary">Indlela yokuthumela isilumkiso sikaxakeka ngokukhawuleza.</string>
+    <string name="manual_faq_sos_steps">Cofa iqhosha leSOS elikwikona ephezulu ngasekunene kuso nasiphi na isikrini. Qinisekisa isilumkiso ukuze wazise iCandelo Lothumelo kunye neetekhnishini ezikufutshane ngokukhawuleza.</string>
+
+    <string name="manual_faq_ai_title">UMncedisi Wetekhnishini WeAI</string>
+    <string name="manual_faq_ai_summary">Ukusebenzisa iAI ukuxilonga iingxaki zobugcisa zeelori.</string>
+    <string name="manual_faq_ai_steps">Cofa u UMncedisi WeAI kwiDashboard yeTekhnishini. Buza imibuzo malunga nokulahleka koxinzelelo lweziqhoboshi zomoya, iikhowudi zeempazamo zeCummins/Volvo SPN, okanye uvavanyo lweWABCO ABS.</string>
+
+    <string name="manual_faq_offline_title">Imowudi Engasebenzisi Intanethi &amp; Nokungqamanisa</string>
+    <string name="manual_faq_offline_summary">Ukusebenza kwiindawo ezikude ezingenayo inethiwekhi yeselula.</string>
+    <string name="manual_faq_offline_steps">Lonke uhlolo lokhuseleko, amakhadi omsebenzi, uvavanyo kunye nohlaziyo lwenkqubela zigcinwa kwifowuni kwiSQLite xa kungekho ntanethi. Iirekhodi zingqamaniswa ngokuzenzekelayo kwiCandelo Lothumelo wakuba uqhagamshelwano lubuyile.</string>
+    <string name="back">buyela_um</string>
+    <string name="technician_logout">Phuma njengeThekhinishiyeni</string>
+    <string name="ai_assistance">Uncedo lwe-AI</string>
+    <string name="vehicle_history">Imbali Yesithuthi</string>
+    <string name="user_manual">Incwadi Yomsebenzisi</string>
+    <string name="technician_settings_td">Iisetingi ZeThekhinishiyeni</string>
+    <string name="truck_service_amp_repair_history">Imbali Yenkonzo Nokulungiswa Kwelori</string>
+    <string name="search">Khangela</string>
+    <string name="enter_truck_registration">Faka Inombolo Yobhaliso Yelori</string>
+
+    <string name="ai_sender_technician">ITekhnishini:</string>
+    <string name="ai_sender_assistant">UMncedisi WeAI WePE:</string>
+
+    <string name="ai_chip_query_brakes">Indlela yokuxilonga ukulahleka koxinzelelo lweziqhoboshi zomoya kwilori enzima?</string>
+    <string name="ai_chip_query_spn">Yintoni impazamo yeSPN 651 FMI 5 Injector Cylinder 1 kwaye ilungiswa njani?</string>
+    <string name="ai_chip_query_abs">Zivavanywa njani iivalvu zeWabco ABS Modulator kunye neesensa zesantya sevili?</string>
+
+    <string name="ai_response_brakes">INKQUBO YOKUXILONGA IZIQHOBOSHI ZOMOYA:\n1. Khangela uxinzelelo oluphuma kwiAir Compressor &amp; noseto lweGovernor (uqhelo lwecut-out yi-120-135 PSI).\n2. Yenza uvavanyo lokuvuza: Beka izithinteli zamavili, khulula isiqhoboshi sasentwasahlobo, pompa inkqubo iye kwi-100 PSI, ujonge igeyiji umzuzu omnye (ukwehla okungaphezulu kwe-2 PSI kwilori enye, i-3 PSI kwidibaniselwano).\n3. Hlola iAir Dryer purge valve &amp; neFour-Circuit Protection Valve ukuze ubone izithintelo okanye ukukrazuka.\n4. Khangela iFoot Brake Valve &amp; neRelay Valve exhaust ports ukuba ayivuzi na ngokuqhubekayo.</string>
+
+    <string name="ai_response_spn">UKUXILONGA IKhowudi YEMPAZAMO YENJINI YEDIESEL (SPN 651 / INJECTOR CIRCUIT):\n1. I-SPN 651 FMI 5 ibonisa iOpen Circuit / High Resistance kwiInjector #1 Solenoid.\n2. Khangela iintambo ezidlula kwivalve cover ukuba azinawo na amafutha okanye iipini ezixegayo.\n3. Linganisa ukumelana kweInjector Solenoid: Uluhlu olulindelekileyo yi-0.2 ukuya kwi-1.5 Ohms. Ukumelana okungaphezulu kwe-2.0 Ohms kubonisa ikhoyili eyonakeleyo.\n4. Khangela uqhagamshelwano lweentambo phakathi kweECM Pin 15 &amp; neInjector Pin A.</string>
+
+    <string name="ai_response_abs">UKUXILONGA IWABCO ABS MODULATOR &amp; NESENSA:\n1. Khangela isikhewu somoya seWheel Speed Sensor: Tyhala isensa ide ichukumise itone wheel; ukujikeleza kwevili kuzilungisela isikhewu.\n2. Uvavanyo lokumelana: Ukumelana kwesensa yeWABCO kufuneka kube yi-900 - 2000 Ohms.\n3. Vavanya iiSolenoids zeModulator Valve: Ukumelana phakathi kweepini zeInlet/Outlet kufuneka kube yi-12-18 Ohms.\n4. Qinisekisa umbane we-24V oya kwiABS ECU.</string>
+
+    <string name="ai_response_safety">UMYALELO WOKHUSELEKO LWASECALENI KWENDLELA:\n1. Misa isithuthi ecaleni lendlela elizinzileyo. Layita izibane zengozi.\n2. Beka Oonxantathu Besilumkiso kwi-45m, 90m, kunye ne-150m emva kwesithuthi esonakeleyo.\n3. Ibhatyi ebonakalayo neebhutsi zokhuseleko ZINYAZELISIWE.\n4. Beka izithinteli kumavili elori phambi kokungena phantsi kwesithuthi.</string>
+
+    <string name="ai_response_general">UNCEDO LOBUGCISA LWEELLORI NGOKUBANZI:\nNgombuzo othi: %1$s\n1. Hlola uqhagamshelwano oluphambili loomatshini/lombane.\n2. Yenza uskeno lweOBD usebenzisa isixhobo sokuxilonga iilori ezinzima.\n3. Jonga iNcwadi yeNkonzo yeOEM &amp; neMithetho yoKhuseleko yePE Airbrakes.\n4. Ukuba kukho ingozi, thumela iSafety Escalation kuMlawuli weCandelo Lothumelo ngokukhawuleza.</string>
+    <string name="ai_technician_assistant">UMncedisi WeAI Wetekhnishini</string>
+    <string name="pe_airbrakes_technical_ai">I-AI Yobugcisa YePE Airbrakes</string>
+    <string name="hello_i_am_your_ai_technician_assistant_ask_me_anything_about_commercial_vehicle_braking_systems_diesel_engine_diagnostics_spn_fmi_fault_codes_or_roadside_safety_standards">Molo! NdinguMncedisi wakho weAI weTekhnishini. Ndibuze nantoni na malunga neenkqubo zeziqhoboshi zezithuthi ezinkulu, ukuxilongwa kweenjini zediesel, iikhowudi zeempazamo zeSPN/FMI, okanye imigangatho yokhuseleko lwasecaleni kwendlela.</string>
+    <string name="quick_diagnostic_queries">Imibuzo Ekhawulezayo Yokuxilonga:</string>
+    <string name="air_brake_pressure_loss">Ukulahleka Koxinzelelo Lweziqhoboshi Zomoya</string>
+    <string name="spn_651_injector_fault">Impazamo Ye-Injector YeSPN 651</string>
+    <string name="wabco_abs_diagnostic">Uxilongo LweWabco ABS</string>
+    <string name="type_fault_description_or_question">Chwetheza inkcazelo yempazamo okanye umbuzo...</string>
+    <string name="ask_ai">Buza I-AI</string>
 </resources>

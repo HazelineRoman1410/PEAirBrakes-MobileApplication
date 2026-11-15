@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">PeAirbrakes</string>
+    <string name="default_web_client_id" translatable="false">94486027821-pqat7dpm8k5kgqa8vhrmhohqprdrhpvm.apps.googleusercontent.com</string>
     <string name="pe_airbrakes" translatable="false">PE AIRBRAKES</string>
     <string name="loading_text" translatable="false">Loading&#8230;</string>
     <string name="login_title" translatable="false">Login</string>
@@ -107,4 +109,93 @@
     <string name="submit_job_card">Submit Job Card</string>
     <string name="dark_mode">Dark Mode:</string>
     <string name="technician_dark_mode">Dark Mode</string>
+
+    <!-- User Manual Screen -->
+    <string name="user_manual_title">User Manual &amp; App Help</string>
+    <string name="manual_search_hint">Search user manual (e.g. quote, safety, map, ETA)...</string>
+    <string name="manual_no_results">No manual topics match your search.</string>
+
+    <string name="category_all">All</string>
+    <string name="category_customer">Customer</string>
+    <string name="category_technician">️Technician</string>
+    <string name="category_faqs">FAQs</string>
+    <string name="manual_tech_assignments_title">Accepting &amp; Managing Breakdown Assignments</string>
+    <string name="manual_tech_assignments_summary">How to accept/reject breakdown jobs assigned by Dispatch.</string>
+    <string name="manual_tech_assignments_steps">STEP 1: Open your Technician Dashboard and tap Active Breakdowns.\nSTEP 2: Review assigned breakdown description, truck registration and location.\nSTEP 3: Tap Accept Job (which sets your status to En Route) or Reject Job (providing a reason for Dispatch re-allocation).\nSTEP 4: Tap Map Nav to launch turn-by-turn navigation to the breakdown site.</string>
+
+    <string name="manual_tech_safety_title">Roadside Safety Inspection &amp; Escalation</string>
+    <string name="manual_tech_safety_summary">Mandatory area safety check before beginning repair work.</string>
+    <string name="manual_tech_safety_steps">STEP 1: Upon arrival at the breakdown, tap Safety Inspection.\nSTEP 2: Assess roadside traffic, warning triangle placement and ground stability.\nSTEP 3: Check PPE (vest and boots) and vehicle wheel chocks/isolation.\nSTEP 4: If safe, submit to proceed. If UNSAFE, toggle Unsafe to trigger immediate Safety Escalation to Dispatch.</string>
+
+    <string name="manual_tech_assessment_title">Breakdown Assessment &amp; Quotation Submission</string>
+    <string name="manual_tech_assessment_summary">Diagnose faults, estimate labour &amp; parts, and submit quotation for Admin approval.</string>
+    <string name="manual_tech_assessment_steps">STEP 1: Tap Assessment &amp; Quote on the job card.\nSTEP 2: Fill in truck details (Make/Model, VIN, Odometer, Engine specifications).\nSTEP 3: Record identified fault, cause and diagnostic results.\nSTEP 4: Enter estimated labour hours, parts cost and travel expenses.\nSTEP 5: Tap Calculate Total Quote and Submit Assessment &amp; Quotation. Wait for Admin approval notification before starting work.</string>
+
+    <string name="manual_tech_progress_title">Repair Progress Tracking &amp; ETA Updates</string>
+    <string name="manual_tech_progress_summary">Publish milestone updates and updated repair ETAs.</string>
+    <string name="manual_tech_progress_steps">STEP 1: Tap Progress Log on the active job card.\nSTEP 2: Select progress milestone (e.g. Pneumatic Air Lines Flushed, Brake Chambers Replaced).\nSTEP 3: Enter progress description and revised completion ETA.\nSTEP 4: Tap Publish Progress Update to notify Dispatch and Customer.</string>
+
+    <string name="manual_tech_parts_title">Spare Parts &amp; Additional Work Approval</string>
+    <string name="manual_tech_parts_summary">Record parts used and request authorization for extra costs.</string>
+    <string name="manual_tech_parts_steps">STEP 1: Tap Parts &amp; Approval.\nSTEP 2: Enter part name, OEM part number and quantity used on job card.\nSTEP 3: If additional out-of-scope work is discovered, fill out the Additional Work Request form and submit to Admin for approval.</string>
+
+    <string name="manual_tech_return_title">Flagging Return Jobs &amp; Customer Complaints</string>
+    <string name="manual_tech_return_summary">Flag unsuccessful repairs or complaints for return visits.</string>
+    <string name="manual_tech_return_steps">STEP 1: If a repair cannot be completed or is unsuccessful, tap Flag Return.\nSTEP 2: Select flag reason (Repair Unsuccessful, Specialist Required, Parts Unavailable, etc.).\nSTEP 3: Provide detailed explanatory notes and submit to Dispatch.</string>
+
+    <string name="manual_customer_assistance_title">Requesting Roadside Assistance</string>
+    <string name="manual_customer_assistance_summary">How to log a breakdown request and attach breakdown location.</string>
+    <string name="manual_customer_assistance_steps">STEP 1: Open Customer Dashboard and tap Request Roadside Assistance.\nSTEP 2: Enter truck registration number and describe the breakdown problem.\nSTEP 3: Tap Take Photo of Problem to capture evidence.\nSTEP 4: Tap Attach My Pin Location to use GPS or pick location on map.\nSTEP 5: Tap Submit Assistance Request.</string>
+
+    <string name="manual_customer_tracking_title">Real-time Technician Allocation &amp; ETA Tracking</string>
+    <string name="manual_customer_tracking_summary">Track allocated technician arrival and approve repair quotes.</string>
+    <string name="manual_customer_tracking_steps">STEP 1: Open Customer Dashboard and tap My Requests History.\nSTEP 2: View assigned technician name, contact, status and live arrival ETA.\nSTEP 3: When a quotation is submitted by the technician, tap your request to review and approve the quote.</string>
+
+    <string name="manual_faq_sos_title">Emergency SOS Feature</string>
+    <string name="manual_faq_sos_summary">How to trigger an immediate emergency alert.</string>
+    <string name="manual_faq_sos_steps">Tap the SOS button located at the top right of any screen. Confirm the alert to notify Dispatch and nearby technicians immediately.</string>
+
+    <string name="manual_faq_ai_title">AI Technician Assistant</string>
+    <string name="manual_faq_ai_summary">Using AI for technical truck troubleshooting.</string>
+    <string name="manual_faq_ai_steps">Tap AI Assistant on the Technician Dashboard. Ask questions about pneumatic air brake pressure loss, Cummins/Volvo SPN fault codes, or WABCO ABS testing.</string>
+
+    <string name="manual_faq_offline_title">Offline Mode &amp; Sync</string>
+    <string name="manual_faq_offline_summary">Working in remote areas without mobile coverage.</string>
+    <string name="manual_faq_offline_steps">All safety inspections, job cards, assessments and progress updates are saved locally in SQLite when offline. Records automatically sync to Dispatch once connectivity returns.</string>
+    <string name="back">back_um</string>
+    <string name="technician_logout">Technician Logout</string>
+    <string name="ai_assistance">AI Assistance</string>
+    <string name="vehicle_history">Vehicle History</string>
+    <string name="user_manual">User Manual</string>
+    <string name="technician_settings_td">Technician Settings</string>
+    <string name="truck_service_amp_repair_history"><![CDATA[Truck Service & Repair History]]></string>
+    <string name="search">Search</string>
+    <string name="enter_truck_registration">Enter Truck Registration</string>
+    <!-- AI Assistant Screen -->
+    <string name="ai_sender_technician">Technician:</string>
+    <string name="ai_sender_assistant">PE AI Assistant:</string>
+
+    <string name="ai_chip_query_brakes">How to diagnose Air Brake Pressure Loss on a heavy truck?</string>
+    <string name="ai_chip_query_spn">What is SPN 651 FMI 5 Injector Cylinder 1 fault and how to repair?</string>
+    <string name="ai_chip_query_abs">How to test Wabco ABS Modulator Valves and Wheel Speed Sensors?</string>
+
+    <string name="ai_response_brakes">AIR BRAKE DIAGNOSTIC PROCEDURE:\n1. Check Air Compressor output pressure &amp; Governor cut-out settings (standard cut-out 120-135 PSI).\n2. Perform leak test: Chock wheels, release spring brake, pump system to 100 PSI, observe gauge for 1 minute (max 2 PSI drop for straight truck, 3 PSI for combination).\n3. Inspect Air Dryer purge valve &amp; Four-Circuit Protection Valve for blockages or diaphragm rupture.\n4. Check Foot Brake Valve (Dual Brake Valve) &amp; Relay Valve exhaust ports for continuous leakage.</string>
+
+    <string name="ai_response_spn">DIESEL ENGINE FAULT CODE DIAGNOSIS (SPN 651 / INJECTOR CIRCUIT):\n1. SPN 651 FMI 5 indicates Open Circuit / High Resistance on Injector #1 Solenoid.\n2. Check valve cover pass-through harness connector for oil contamination or loose pins.\n3. Measure Injector Solenoid Resistance: Expected range is 0.2 to 1.5 Ohms. Resistance above 2.0 Ohms indicates failed injector coil.\n4. Check ECM harness continuity between ECM Pin 15 &amp; Injector Pin A.</string>
+
+    <string name="ai_response_abs">WABCO ABS MODULATOR &amp; SENSOR DIAGNOSTIC:\n1. Check Wheel Speed Sensor Air Gap: Push sensor in until it touches tone wheel; wheel rotation self-adjusts gap.\n2. Resistance test: WABCO passive sensor resistance must be 900 - 2000 Ohms.\n3. Test Modulator Valve Solenoids: Resistance across Inlet/Outlet pins should be 12-18 Ohms.\n4. Verify 24V supply to ABS ECU.</string>
+
+    <string name="ai_response_safety">ROADSIDE SAFETY DIRECTIVE:\n1. Park vehicle on stable shoulder. Turn on hazard lights.\n2. Place Warning Triangles at 45m, 90m, and 150m behind breakdown.\n3. High-visibility reflective vest and safety boots are MANDATORY.\n4. Chock truck drive wheels before going beneath vehicle.</string>
+
+    <string name="ai_response_general">GENERAL TRUCK TECHNICAL ASSISTANCE:\nFor query: %1$s\n1. Inspect primary mechanical/electrical connections.\n2. Perform digital OBD scan using heavy-duty diagnostic scanner.\n3. Refer to OEM Service Manual &amp; PE Airbrakes Safety Regulations.\n4. If hazard exists, submit Safety Escalation to Dispatch Admin immediately.</string>
+    <string name="ai_technician_assistant">AI Technician Assistant</string>
+    <string name="pe_airbrakes_technical_ai">PE Airbrakes Technical AI</string>
+    <string name="hello_i_am_your_ai_technician_assistant_ask_me_anything_about_commercial_vehicle_braking_systems_diesel_engine_diagnostics_spn_fmi_fault_codes_or_roadside_safety_standards">Hello! I am your AI Technician Assistant. Ask me anything about commercial vehicle braking systems, diesel engine diagnostics, SPN/FMI fault codes, or roadside safety standards.</string>
+    <string name="quick_diagnostic_queries">Quick Diagnostic Queries:</string>
+    <string name="air_brake_pressure_loss">Air Brake Pressure Loss</string>
+    <string name="spn_651_injector_fault">SPN 651 Injector Fault</string>
+    <string name="wabco_abs_diagnostic">Wabco ABS Diagnostic</string>
+    <string name="type_fault_description_or_question">Type fault description or question...</string>
+    <string name="ask_ai">Ask AI</string>
+
 </resources>

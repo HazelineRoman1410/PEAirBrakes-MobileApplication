@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="loading_text">E a laisa...</string>
     <string name="login_title">Tsena</string>
@@ -106,4 +106,91 @@
     <string name="submit_job_card">Romela Karata ya Tiro</string>
     <string name="dark_mode">Mokgwa o o Lefifi:</string>
     <string name="technician_dark_mode">Mokgwa o o Lefifi</string>
+    <string name="user_manual_title">Buka ya Modirisi le Thuso ya App</string>
+    <string name="manual_search_hint">Batla mo bukeng ya modirisi...</string>
+    <string name="manual_no_results">Ga go na ditlhogo tse di tsamaisanang le patlo ya gago.</string>
+
+    <string name="category_all">tsotlhe</string>
+    <string name="category_customer">Moreki</string>
+    <string name="category_technician">Setegeniki</string>
+    <string name="category_faqs">Dipotso tse di Boditsweng Gantsi</string>
+
+    <string name="manual_tech_assignments_title">Go Amogela &amp; le go Laola Ditiro tsa go Senyega ga Dipalangwa</string>
+    <string name="manual_tech_assignments_summary">Mokgwa wa go amogela kgotsa go gana ditiro tsa go senyega ga dipalangwa tse di abilweng ke Lefapha la Thomelo.</string>
+    <string name="manual_tech_assignments_steps">KGATO YA 1: Bula Dashboard ya gago ya Motegeniki mme o tobetse mo go Go Senyega go go Tsweletseng.\nKGATO YA 2: Sekaseka tlhaloso ya go senyega go go abilweng, nomoro ya kwadiso ya lori le lefelo.\nKGATO YA 3: Tobetsa Amogela Tiro (se se fetolang maemo a gago go nna Mo Tseleng) kgotsa Gana Tiro (o neela lebaka la gore Lefapha la Thomelo le abele yo mongwe).\nKGATO YA 4: Tobetsa Kaelo ya Mmepe go simolola kaelo ya tsela go ya kwa lefelong le lori e senyegetseng kwa go lone.</string>
+
+    <string name="manual_tech_safety_title">Tlhatlhobo ya Pabalesego ya mo Tseleng &amp; le go Fetisetsa Kwa Godimo</string>
+    <string name="manual_tech_safety_summary">Tlhatlhobo e e patelediwang ya pabalesego ya lefelo pele ga go simolola tiro ya go baakanya.</string>
+    <string name="manual_tech_safety_steps">KGATO YA 1: Fa o goroga kwa lori e senyegileng teng, tobetsa Tlhatlhobo ya Pabalesego.\nKGATO YA 2: Sekaseka pharakano ya mo tseleng, go bewa ga dikhutlotharo tsa tlhagiso le go nitama ga mmu.\nKGATO YA 3: Tlhatlhoba PPE (baki le dibutu) le dikgoreletsi tsa maotwana a serori.\nKGATO YA 4: Fa go babalesegile, romela go tswelela pele. Fa GO SA BABALESEGA, tobetsa Go sa Babalesega go romela Tlhagiso ya Pabalesego ka bonako kwa Lefapheng la Thomelo.</string>
+
+    <string name="manual_tech_assessment_title">Tshekatsheko ya go Senyega &amp; le go Romela Khoutheishene</string>
+    <string name="manual_tech_assessment_summary">Sekaseka diphoso, fopholetsa tiro &amp; le dikarolo, mme o romele khoutheishene gore e amogelwe ke Motsamaisi.</string>
+    <string name="manual_tech_assessment_steps">KGATO YA 1: Tobetsa Tshekatsheko &amp; le Khoutheishene mo karateng ya tiro.\nKGATO YA 2: Tlatsa dintlha tsa lori (Mofuta/Motele, VIN, Odometer, le dintlha tsa Enjene).\nKGATO YA 3: Kwala phoso e e bonweng, lebaka le dipholo tsa tshekatsheko.\nKGATO YA 4: Tsenya diura tsa tiro tse di fopholeditsweng, tlhotlhwa ya dikarolo le ditshenyegelo tsa mosepele.\nKGATO YA 5: Tobetsa Bala Khoutheishene Yotlhe le Romela Tshekatsheko &amp; le Khoutheishene. Leta kitsiso ya tetla ya Motsamaisi pele ga o simolola tiro.</string>
+
+    <string name="manual_tech_progress_title">Go Latedisa Tswelelopele ya Paakanyo &amp; le Diphetogo tsa ETA</string>
+    <string name="manual_tech_progress_summary">Phasalatsa diphetogo tsa dikgato tsa tiro le nako e ntšha ya go fetsa paakanyo (ETA).</string>
+    <string name="manual_tech_progress_steps">KGATO YA 1: Tobetsa Rekoto ya Tswelelopele mo karateng ya tiro e e tsweletseng.\nKGATO YA 2: Tlhopha kgato ya tswelelopele (sekai: Diphaephe tsa Mowa di Tlhatswitswe, Dikamore tsa Mariki di Fentswe).\nKGATO YA 3: Tsenya tlhaloso ya tswelelopele le nako e ntšha ya go fetsa (ETA).\nKGATO YA 4: Tobetsa Phasalatsa Phetogo ya Tswelelopele go itsise Lefapha la Thomelo le Modirisi.</string>
+
+    <string name="manual_tech_parts_title">Dikarolo tsa Sefatanaga &amp; le Tetla ya Tiro e e Okeditsweng</string>
+    <string name="manual_tech_parts_summary">Kwala dikarolo tse di dirisitsweng mme o kope tetla ya ditshenyegelo tse di okeditsweng.</string>
+    <string name="manual_tech_parts_steps">KGATO YA 1: Tobetsa Dikarolo &amp; le Tetla.\nKGATO YA 2: Tsenya leina la karolo, nomoro ya karolo ya OEM le palo e e dirisitsweng mo karateng ya tiro.\nKGATO YA 3: Fa go bonwa tiro e nngwe e e okeditsweng kwa ntle ga e e neng e rulagantswe, tlatsa foromo ya Kopo ya Tiro e e Okeditsweng mme o e romele kwa Motsamaising gore e amogelwe.</string>
+
+    <string name="manual_tech_return_title">Go Tshwaya Ditiro tsa go Boela &amp; le Dingongorego tsa Badirisi</string>
+    <string name="manual_tech_return_summary">Tshwaya dipaakanyo tse di sa atlegang kgotsa dingongorego go boela kwa tirong.</string>
+    <string name="manual_tech_return_steps">KGATO YA 1: Fa paakanyo e sa kgone go wediwa kgotsa e sa atlega, tobetsa Tshwaya Go Boela.\nKGATO YA 2: Tlhopha lebaka la go tshwaya (Paakanyo ga e a Atlega, Go Tlhokega Moitseanape, Dikarolo ga di yo, jalo le jalo).\nKGATO YA 3: Neela dintlha tse di tlhalosang ka botlalo mme o romele kwa Lefapheng la Thomelo.</string>
+
+    <string name="manual_customer_assistance_title">Go Kopa Thuso ya mo Tseleng</string>
+    <string name="manual_customer_assistance_summary">Mokgwa wa go kwadisa kopo ya go senyega ga serori le go tsenya lefelo le le senyegetseng kwa go lone.</string>
+    <string name="manual_customer_assistance_steps">KGATO YA 1: Bula Dashboard ya Modirisi mme o tobetse Kopa Thuso ya mo Tseleng.\nKGATO YA 2: Tsenya nomoro ya kwadiso ya lori mme o tlhalose bothata jwa go senyega.\nKGATO YA 3: Tobetsa Tsaya Senepe sa Bothata go tsaya bosupi.\nKGATO YA 4: Tobetsa Tsenya Lefelo la Me la Phini go dirisa GPS kgotsa go tlhopha lefelo mo mmepeng.\nKGATO YA 5: Tobetsa Romela Kopo ya Thuso.</string>
+
+    <string name="manual_customer_tracking_title">Kabelo ya Motegeniki ka Nako ya Mmatota &amp; le go Latedisa ETA</string>
+    <string name="manual_customer_tracking_summary">Latedisa go goroga ga motegeniki yo o abilweng mme o amogele dikhoutheishene tsa paakanyo.</string>
+    <string name="manual_customer_tracking_steps">KGATO YA 1: Bula Dashboard ya Modirisi mme o tobetse Histori ya Dikopo tsa Me.\nKGATO YA 2: Leba leina la motegeniki yo o abilweng, megala ya tlhaeletsano, maemo le nako ya go goroga (ETA).\nKGATO YA 3: Fa khoutheishene e rometswe ke motegeniki, tobetsa kopo ya gago go e sekaseka le go e amogela.</string>
+
+    <string name="manual_faq_sos_title">Karolo ya Tshoganyetso ya SOS</string>
+    <string name="manual_faq_sos_summary">Mokgwa wa go romela tlhagiso ya tshoganyetso ka bonako.</string>
+    <string name="manual_faq_sos_steps">Tobetsa konopo ya SOS e e kwa godimo ka fa mojeng mo skrineng sengwe le sengwe. Netefatsa tlhagiso go itsise Lefapha la Thomelo le bategeniki ba ba gaufi ka bonako.</string>
+
+    <string name="manual_faq_ai_title">Mothusi wa Motegeniki wa AI</string>
+    <string name="manual_faq_ai_summary">Go dirisa AI go rarabolola mathata a setegeniki a dilori.</string>
+    <string name="manual_faq_ai_steps">Tobetsa Mothusi wa AI mo Dashboard ya Motegeniki. Botsa dipotso ka ga go latlhegelwa ke kgatelelo ya mariki a mowa, dikhoutu tsa diphoso tsa Cummins/Volvo SPN, kgotsa teko ya WABCO ABS.</string>
+
+    <string name="manual_faq_offline_title">Mokgwa wa go Dira Kwa Ntle ga Inthanete &amp; le go Nyalanya</string>
+    <string name="manual_faq_offline_summary">Go dira kwa mafelong a a kwa kgakala a a senang kgolagano ya mogala.</string>
+    <string name="manual_faq_offline_steps">Ditlhatlhobo tsotlhe tsa pabalesego, dikarata tsa tiro, ditshekatsheko le diphetogo tsa tswelelopele di bolokwa mo founung mo go SQLite fa o se mo inthaneteng. Direkoto di nyalana ka botsone le Lefapha la Thomelo fa kgolagano e boa.</string>
+    <string name="back">boela_um</string>
+    <string name="technician_logout">Tswa mo Thekhenishieneng</string>
+    <string name="ai_assistance">Thuso ya AI</string>
+    <string name="vehicle_history">Hisetori ya Koloi</string>
+    <string name="user_manual">Bukana ya Modirisi</string>
+    <string name="technician_settings_td">Dipeakanyo tsa Thekhenishiene</string>
+    <string name="truck_service_amp_repair_history">Hisetori ya Tirelo le Tokiso ya Teraka</string>
+    <string name="search">Batla</string>
+    <string name="enter_truck_registration">Tsenya Nomoro ya Kwadiso ya Lori</string>
+
+    <string name="ai_sender_technician">Motegeniki:</string>
+    <string name="ai_sender_assistant">Mothusi wa AI wa PE:</string>
+
+    <string name="ai_chip_query_brakes">Mokgwa wa go sekaseka go latlhegelwa ke kgatelelo ya mariki a mowa mo loring e kgolo?</string>
+    <string name="ai_chip_query_spn">Phoso ya SPN 651 FMI 5 Injector Cylinder 1 ke eng mme e baakanngwa jang?</string>
+    <string name="ai_chip_query_abs">Di-valve tsa Wabco ABS Modulator le disensara tsa lebelo la maotwana di lekiwa jang?</string>
+
+    <string name="ai_response_brakes">TSAMAISO YA GO SEKASEKA MARIKI A MOWA:\n1. Tlhatlhoba kgatelelo e e tswang mo Air Compressor &amp; le di-setting tsa Governor cut-out (cut-out e e tlwaelegileng ke 120-135 PSI).\n2. Dira teko ya go dutla: Kgoreletsa maotwana, golola spring brake, pompa thulaganyo go ya go 100 PSI, leba geiji motsotso o le mongwe (go fokotsega ga 2 PSI mo loring e le nngwe, 3 PSI mo go e e gogang).\n3. Sekaseka Air Dryer purge valve &amp; le Four-Circuit Protection Valve go bona dikgoreletsi kgotsa go gagoga.\n4. Tlhatlhoba Foot Brake Valve &amp; le Relay Valve exhaust ports go bona fa di sa dutle.</string>
+
+    <string name="ai_response_spn">TSHEKATSHEKO YA KHOUTU YA PHOSO YA ENJENE YA DISELE (SPN 651 / INJECTOR CIRCUIT):\n1. SPN 651 FMI 5 e bontsha Open Circuit / High Resistance mo Injector #1 Solenoid.\n2. Tlhatlhoba kgolagano ya megala ya valve cover go bona kgotlelego ya oli kgotsa dipini tse di repileng.\n3. Lekanya Injector Solenoid Resistance: Selekanyo se se solofetsweng ke 0.2 go ya go 1.5 Ohms. Selekanyo se se fetang 2.0 Ohms se bontsha coil e e senyegileng.\n4. Tlhatlhoba kgolagano ya megala ya ECM fa gare ga ECM Pin 15 &amp; le Injector Pin A.</string>
+
+    <string name="ai_response_abs">TSHEKATSHEKO YA WABCO ABS MODULATOR &amp; LE SENSARA:\n1. Tlhatlhoba phatlha ya mowa ya Wheel Speed Sensor: Kgoromeletsa sensara go fitlha e ama tone wheel; go dikologa ga leotwana go baakanya phatlha ka bogone.\n2. Teko ya resistance: Resistance ya sensara ya WABCO e tshwanetse go nna 900 - 2000 Ohms.\n3. Leka Di-solenoid tsa Modulator Valve: Resistance mo dipining tsa Inlet/Outlet e tshwanetse go nna 12-18 Ohms.\n4. Netefatsa motlakase wa 24V o o yang kwa ABS ECU.</string>
+
+    <string name="ai_response_safety">TAELO YA PABALESEGO YA MO TSELA:\n1. Emisa serori mo thoko ga tsela mo go nitameng. Tshuba dipone tsa kotsi.\n2. Baya Dikhutlotharo tsa Tlhagiso mo sekgaleng sa 45m, 90m, le 150m kwa morago ga lori e e senyegileng.\n3. Baki e e bonalang sentle le dibutu tsa pabalesego DI A PATELEDIWA.\n4. Kgoreletsa maotwana a lori pele ga o tsena kwa tlase ga serori.</string>
+
+    <string name="ai_response_general">THUSO YA SETEGENIKI YA DILORI KA KAKARETSO:\nKa ga potso: %1$s\n1. Sekaseka dikgolagano tsa konokono tsa motšhini/motlakase.\n2. Dira tlhatlhobo ya dijithale ya OBD o dirisa sekenara sa dilori tse dikgolo.\n3. Leba Buka ya Tiro ya OEM &amp; le Melawana ya Pabalesego ya PE Airbrakes.\n4. Fa go na le kotsi, romela Tlhagiso ya Pabalesego kwa Motsamaising wa Thomelo ka bonako.</string>
+    <string name="ai_technician_assistant">Mothusi wa Motegeniki wa AI</string>
+    <string name="pe_airbrakes_technical_ai">AI ya Setegeniki ya PE Airbrakes</string>
+    <string name="hello_i_am_your_ai_technician_assistant_ask_me_anything_about_commercial_vehicle_braking_systems_diesel_engine_diagnostics_spn_fmi_fault_codes_or_roadside_safety_standards">Dumela! Ke nna Mothusi wa gago wa Motegeniki wa AI. Mpotse sengwe le sengwe ka ga dithulaganyo tsa mariki a dipalangwa tse dikgolo, tshekatsheko ya dienjene tsa disele, dikhoutu tsa diphoso tsa SPN/FMI, kgotsa melawana ya pabalesego ya mo tseleng.</string>
+    <string name="quick_diagnostic_queries">Dipotso tse di Bonako tsa Tshekatsheko:</string>
+    <string name="air_brake_pressure_loss">Go Latlhegelwa ke Kgatelelo ya Mariki a Mowa</string>
+    <string name="spn_651_injector_fault">Phoso ya Injector ya SPN 651</string>
+    <string name="wabco_abs_diagnostic">Tshekatsheko ya Wabco ABS</string>
+    <string name="type_fault_description_or_question">Kwala tlhaloso ya phoso kgotsa potso...</string>
+    <string name="ask_ai">Botsa AI</string>
 </resources>

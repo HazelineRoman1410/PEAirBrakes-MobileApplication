@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="loading_text">Laai...</string>
     <string name="login_title">Teken Aan</string>
@@ -106,4 +106,92 @@
     <string name="submit_job_card">Dien Werkkaart In</string>
     <string name="dark_mode">Donker Modus:</string>
     <string name="technician_dark_mode">Donker Modus</string>
+    <string name="user_manual_title">Gebruikershandleiding &amp; Programhulp</string>
+    <string name="manual_search_hint">Soek gebruikershandleiding...</string>
+    <string name="manual_no_results">Geen handleidingonderwerpe pas by jou soektog nie.</string>
+
+    <string name="category_all">Alles</string>
+    <string name="category_customer">Kliënt</string>
+    <string name="category_technician">Tegnikus</string>
+    <string name="category_faqs">Gereelde vrae</string>
+
+    <string name="manual_tech_assignments_title">Aanvaarding &amp; Bestuur van Onklaarraking-opdragte</string>
+    <string name="manual_tech_assignments_summary">Hoe om onklaarraking-take wat deur Versending toegewys is te aanvaar of te verwerp.</string>
+    <string name="manual_tech_assignments_steps">STAP 1: Maak jou Tegnikus-paneelbord oop en tik op Aktiewe Onklaarrakings.\nSTAP 2: Hersien die toegewysde onklaarraking-beskrywing, vragmotorregistrasie en ligging.\nSTAP 3: Tik op Aanvaar Taak (wat jou status na Op Pad verander) of Verwerp Taak (en verskaf n rede vir hertoewysing deur Versending).\nSTAP 4: Tik op Kaartnavigasie om draai-vir-draai-navigasie na die onklaarraking-perseel te begin.</string>
+
+    <string name="manual_tech_safety_title">Padveiligheidsinspeksie &amp; Eskalasie</string>
+    <string name="manual_tech_safety_summary">Verpligte area-veiligheidskontrole voordat herstelwerk begin.</string>
+    <string name="manual_tech_safety_steps">STAP 1: By aankoms by die onklaarraking, tik op Veiligheidsinspeksie.\nSTAP 2: Evalueer padverkeer, plasing van waarskuwingsdriehoeke en grondstabiliteit.\nSTAP 3: Kontroleer PBT (baadjie en stewels) en voertuigwielblokke of isolasie.\nSTAP 4: Indien veilig, dien in om voort te gaan. Indien ONVEILIG, skakel Onveilig aan om onmiddellike Veiligheidseskalasie na Versending te stuur.</string>
+
+    <string name="manual_tech_assessment_title">Onklaarraking-assessering &amp; Kwotasie-indiening</string>
+    <string name="manual_tech_assessment_summary">Diagnoseer foute, beraam arbeid &amp; onderdele, en dien kwotasie in vir Admin-goedkeuring.</string>
+    <string name="manual_tech_assessment_steps">STAP 1: Tik op Assessering &amp; Kwotasie op die werkskaart.\nSTAP 2: Vul vragmotorbesonderhede in (Fabrikaat/Model, VIN, Kilometerteller, Enjinspesifikasies).\nSTAP 3: Teken geïdentifiseerde fout, oorsaak en diagnostiese resultate aan.\nSTAP 4: Voer beraamde arbeidsure, onderdelekoste en reiskoste in.\nSTAP 5: Tik op Bereken Totale Kwotasie en Dien Assessering &amp; Kwotasie In. Wag vir Admin-goedkeuringskennisgewing voordat jy begin werk.</string>
+
+    <string name="manual_tech_progress_title">Herstelvordering-nasporing &amp; BTA-opdaterings</string>
+    <string name="manual_tech_progress_summary">Publiseer mylpaal-opdaterings en opgedateerde herstel-BTA.</string>
+    <string name="manual_tech_progress_steps">STAP 1: Tik op Vorderingslogboek op die aktiewe werkskaart.\nSTAP 2: Kies vorderingsmylpaal (bv. Pneumatiese Luglyne Gespoel, Remkamers Vervang).\nSTAP 3: Voer vorderingsbeskrywing en hersiene voltooiings-BTA in.\nSTAP 4: Tik op Publiseer Vorderingsopdatering om Versending en Kliënt in kennis te stel.</string>
+
+    <string name="manual_tech_parts_title">Onderdele &amp; Goedkeuring vir Bykomende Werk</string>
+    <string name="manual_tech_parts_summary">Teken gebruikte onderdele aan en versoek magtiging vir ekstra koste.</string>
+    <string name="manual_tech_parts_steps">STAP 1: Tik op Onderdele &amp; Goedkeuring.\nSTAP 2: Voer onderdeelnaam, OEM-onderdeelnommer en hoeveelheid gebruik op die werkskaart in.\nSTAP 3: Indien bykomende werk buite bestek ontdek word, vul die Versoek vir Bykomende Werk-vorm in en dien dit by Admin in vir goedkeuring.</string>
+
+    <string name="manual_tech_return_title">Merk van Terugkeertake &amp; Kliënteklagtes</string>
+    <string name="manual_tech_return_summary">Merk onsuksesvolle herstelwerk of klagtes vir terugkeerbesoeke.</string>
+    <string name="manual_tech_return_steps">STAP 1: Indien n herstelwerk nie voltooi kan word nie of onsuksesvol is, tik op Merk Terugkeer.\nSTAP 2: Kies merk-rede (Herstel Onsuksesvol, Spesialis Benodig, Onderdele Nie Beskikbaar Nie, ens.).\nSTAP 3: Verskaf gedetailleerde verduidelikende notas en dien in by Versending.</string>
+
+    <string name="manual_customer_assistance_title">Versoek Padbystand</string>
+    <string name="manual_customer_assistance_summary">Hoe om n onklaarraking-versoek aan te teken en die ligging aan te heg.</string>
+    <string name="manual_customer_assistance_steps">STAP 1: Maak Kliënt-paneelbord oop en tik op Versoek Padbystand.\nSTAP 2: Voer vragmotorregistrasienommer in en beskryf die onklaarraking-probleem.\nSTAP 3: Tik op Neem Foto van Probleem om bewyse vas te lê.\nSTAP 4: Tik op Heg My Penligging Aan om GPS te gebruik of kies ligging op kaart.\nSTAP 5: Tik op Dien Bystandsversoek In.</string>
+
+    <string name="manual_customer_tracking_title">Intydse Tegnikus-toewysing &amp; BTA-nasporing</string>
+    <string name="manual_customer_tracking_summary">Spoor toegewysde tegnikus se aankoms na en keur herstelkwotasies goed.</string>
+    <string name="manual_customer_tracking_steps">STAP 1: Maak Kliënt-paneelbord oop en tik op My Versoekgeskiedenis.\nSTAP 2: Bekyk toegewysde tegnikus se naam, kontakbesonderhede, status en regstreekse aankoms-BTA.\nSTAP 3: Wanneer n kwotasie deur die tegnikus ingedien is, tik op jou versoek om die kwotasie te hersien en goed te keur.</string>
+
+    <string name="manual_faq_sos_title">Nood-SOS-funksie</string>
+    <string name="manual_faq_sos_summary">Hoe om n onmiddellike noodwaarskuwing te aktiveer.</string>
+    <string name="manual_faq_sos_steps">Tik op die SOS-knoppie regs bo op enige skerm. Bevestig die waarskuwing om Versending en nabygeleë tegnikusse onmiddellik in kennis te stel.</string>
+
+    <string name="manual_faq_ai_title">KI-tegnikusassistent</string>
+    <string name="manual_faq_ai_summary">Gebruik KI vir tegniese foutopsporing aan vragmotors.</string>
+    <string name="manual_faq_ai_steps">Tik op KI-assistent op die Tegnikus-paneelbord. Vra vrae oor pneumatiese lugrem-drukverlies, Cummins/Volvo SPN-foutkodes, of WABCO ABS-toetsing.</string>
+
+    <string name="manual_faq_offline_title">Vanlyn Modus &amp; Sinkronisering</string>
+    <string name="manual_faq_offline_summary">Werk in afgeleë gebiede sonder selfoondekking.</string>
+    <string name="manual_faq_offline_steps">Alle veiligheidsinspeksies, werkskaarte, assesserings en vorderingsopdaterings word plaaslik in SQLite gestoor wanneer jy vanlyn is. Rekords sinkroniseer outomaties met Versending sodra verbinding terugkeer.</string>
+    <string name="back">terug_um</string>
+    <string name="technician_logout">Tegnikus Afmeld</string>
+    <string name="ai_assistance">KI Bystand</string>
+    <string name="vehicle_history">Voertuiggeskiedenis</string>
+    <string name="user_manual">Gebruikershandleiding</string>
+    <string name="technician_settings_td">Tegnikus Instellings</string>
+    <string name="truck_service_amp_repair_history">Vragmotor Diens- en Herstelgeskiedenis</string>
+    <string name="search">Soek</string>
+    <string name="enter_truck_registration">Voer Vragmotorregistrasie In</string>
+
+    <string name="ai_sender_technician">Tegnikus:</string>
+    <string name="ai_sender_assistant">PE KI-assistent:</string>
+
+    <string name="ai_chip_query_brakes">Hoe om Lugrem-drukverlies op n swaar vragmotor te diagnoseer?</string>
+    <string name="ai_chip_query_spn">Wat is SPN 651 FMI 5 Inspuiter Silinder 1 fout en hoe om dit te herstel?</string>
+    <string name="ai_chip_query_abs">Hoe om Wabco ABS-modulatorkleppe en wielspoedsensors te toets?</string>
+
+    <string name="ai_response_brakes">LUGREM-DIAGNOSTIESE PROSEDURE:\n1. Kontroleer Lugkompressor-uitsetdruk &amp; Reguleerder-uitskakelinstellings (standaard uitskakeling 120-135 PSI).\n2. Doen lektoets: Blokkeer wiele, los veerrem, pomp stelsel tot 100 PSI, hou meter dop vir 1 minuut (maks 2 PSI daling vir enkelvragmotor, 3 PSI vir kombinasie).\n3. Inspekteer Lugdroër-suiweringsklep &amp; Vierkring-beskermingsklep vir blokkasies of diafragmaskeur.\n4. Kontroleer Voetremklep &amp; Relêklep-uitlaatpoorte vir deurlopende lekkasie.</string>
+
+    <string name="ai_response_spn">DIESELENJIN-FOUTKODEDIAGNOSE (SPN 651 / INSPUITERKRING):\n1. SPN 651 FMI 5 dui op Oop Kring / Hoë Weerstand op Inspuiter #1 Solenoïde.\n2. Kontroleer klepdeksel-deurvoerharnasverbinding vir oliebesoedeling of los penne.\n3. Meet Inspuiter-solenoïdeweerstand: Verwagte reeks is 0.2 tot 1.5 Ohm. Weerstand bo 2.0 Ohm dui op foutiewe inspuiterspoel.\n4. Kontroleer ECM-harnaskontinuïteit tussen ECM-pen 15 &amp; Inspuiter-pen A.</string>
+
+    <string name="ai_response_abs">WABCO ABS-MODULATOR &amp; SENSORDIAGNOSE:\n1. Kontroleer Wielspoedsensor-lugspleet: Druk sensor in totdat dit toonwiel raak; wielrotasie stel gaping self in.\n2. Weerstandstoets: WABCO passiewe sensorweerstand moet 900 - 2000 Ohm wees.\n3. Toets Modulatorklep-solenoïdes: Weerstand oor Inlaat-/Uitlaatpenne moet 12-18 Ohm wees.\n4. Verifieer 24V-toevoer na ABS ECU.</string>
+
+    <string name="ai_response_safety">PADVEILIGHEIDSRIGLYN:\n1. Parkeer voertuig op stabiele skouer. Skakel gevaarligte aan.\n2. Plaas Waarskuwingsdriehoeke op 45m, 90m, en 150m agter onklaarraking.\n3. Hoësigbaarheid-reflekterende baadjie en veiligheidsstewels is VERPLIGTEND.\n4. Blokkeer vragmotor-aandryfwiele voordat jy onder die voertuig ingaan.</string>
+
+    <string name="ai_response_general">ALGEMENE VRAGMOTOR TEGNIESE BYSTAND:\nVir navraag: %1$s\n1. Inspekteer primêre meganiese/elektriese verbindings.\n2. Voer digitale OBD-skandering uit met swaardiens-diagnostiese skandeerder.\n3. Verwys na OEM-dienshandleiding &amp; PE Airbrakes-veiligheidsregulasies.\n4. Indien gevaar bestaan, dien onmiddellik Veiligheidseskalasie by Versendingsadmin in.</string>
+    <string name="ai_technician_assistant">KI-tegnikusassistent</string>
+    <string name="pe_airbrakes_technical_ai">PE Airbrakes Tegniese KI</string>
+    <string name="hello_i_am_your_ai_technician_assistant_ask_me_anything_about_commercial_vehicle_braking_systems_diesel_engine_diagnostics_spn_fmi_fault_codes_or_roadside_safety_standards">Hallo! Ek is jou KI-tegnikusassistent. Vra my enigiets oor kommersiële voertuigremstelsels, dieselenjindiagnostiek, SPN/FMI-foutkodes, of padveiligheidstandaarde.</string>
+    <string name="quick_diagnostic_queries">Vinnige Diagnostiese Navrae:</string>
+    <string name="air_brake_pressure_loss">Lugrem-drukverlies</string>
+    <string name="spn_651_injector_fault">SPN 651 Inspuiterfout</string>
+    <string name="wabco_abs_diagnostic">Wabco ABS-diagnostiek</string>
+    <string name="type_fault_description_or_question">Tik foutbeskrywing of vraag...</string>
+    <string name="ask_ai">Vra KI</string>
+
 </resources>

@@ -43,9 +43,6 @@ class DieselSlipsActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        AppCompatDelegate.setDefaultNightMode(
-            AppCompatDelegate.MODE_NIGHT_NO
-        )
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_diesel_slips)
@@ -93,11 +90,7 @@ class DieselSlipsActivity : AppCompatActivity() {
         }
         
         photoFile?.also {
-            photoUri = FileProvider.getUriForFile(
-                this,
-                "${packageName}.fileprovider",
-                it
-            )
+            photoUri = FileProvider.getUriForFile(this, "${packageName}.fileprovider", it)
             takePictureLauncher.launch(photoUri!!)
         }
     }
@@ -108,8 +101,7 @@ class DieselSlipsActivity : AppCompatActivity() {
         return File.createTempFile(
             "JPEG_${timeStamp}_",
             ".jpg",
-            storageDir
-        ).apply {
+            storageDir).apply {
             currentPhotoPath = absolutePath
         }
     }
@@ -124,8 +116,7 @@ class DieselSlipsAdapter(private var slips: List<DieselSlip>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_diesel_slip, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_diesel_slip, parent, false)
         return ViewHolder(view)
     }
 

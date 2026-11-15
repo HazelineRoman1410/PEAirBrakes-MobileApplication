@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tech_dashboard_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
-    tools:context=".TechnicianDashboardActivity">
+    android:fillViewport="true">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/technician_dashboard_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        tools:context=".TechnicianDashboardActivity">
     <View
         android:id="@+id/header_view"
         android:layout_width="match_parent"
@@ -174,7 +178,7 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:contentDescription="Request Assistance"
+                android:contentDescription="View Settings"
                 android:src="@drawable/ic_customer_technician_settings" />
 
             <TextView
@@ -182,14 +186,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:text="Technician Settings"
+                android:text="@string/technician_settings_td"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_technician_logout"
+        android:id="@+id/card_technician_user_manual"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -206,30 +210,138 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:contentDescription="View Requests"
-                android:src="@drawable/ic_customer_technician_logout" />
+                android:contentDescription="View User Manual"
+                android:src="@drawable/ic_user_manual" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:text="Technician Logout"
+                android:text="@string/user_manual"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <androidx.constraintlayout.helper.widget.Flow
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_technician_vehicle_history"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="View History"
+                android:src="@drawable/ic_search_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/vehicle_history"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_technician_ai_assistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="View AI Assistance"
+                android:src="@drawable/ic_ai_assistance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/ai_assistance"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_technician_logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Logout"
+                    android:src="@drawable/ic_customer_technician_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/technician_logout"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/technician_dashboard_flow"
+        android:layout_width="373dp"
+        android:layout_height="517dp"
         android:layout_margin="16dp"
-        app:constraint_referenced_ids="card_active_breakdowns,card_completed_jobs,card_diesel_slip,card_log_breakdown,card_technician_settings,card_technician_logout"
+        app:constraint_referenced_ids="card_active_breakdowns,card_completed_jobs,card_diesel_slip,card_log_breakdown,card_technician_settings,card_technician_user_manual,card_technician_vehicle_history,card_technician_ai_assistance,card_technician_logout"
         app:flow_maxElementsWrap="2"
         app:flow_wrapMode="aligned"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_view" />
+        app:layout_constraintTop_toBottomOf="@id/header_view"></androidx.constraintlayout.helper.widget.Flow>
 
+        <View
+            android:id="@+id/bottomSpacer"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintTop_toBottomOf="@id/technician_dashboard_flow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

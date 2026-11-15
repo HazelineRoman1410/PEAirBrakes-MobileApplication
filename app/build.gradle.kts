@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -41,6 +42,8 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation(libs.firebase.database)
     implementation(libs.material)
     implementation(libs.play.services.location)
     testImplementation(libs.junit)
@@ -48,4 +51,8 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     implementation("com.google.android.material:material:1.14.0")
     implementation("org.osmdroid:osmdroid-android:6.1.20")
+
+    // Fixed versions compatible with Kotlin 2.2
+    implementation("com.google.firebase:firebase-auth:23.2.0")
+    implementation("com.google.android.gms:play-services-auth:21.3.0")
 }

@@ -31,12 +31,10 @@ class ChooseLocationActivity : AppCompatActivity() {
     }
 
     private val locationPermissionLauncher =
-        registerForActivityResult(
-            ActivityResultContracts.RequestMultiplePermissions()
-        ) { permissions ->
+        registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
+            permissions ->
 
-            val granted =
-                permissions[Manifest.permission.ACCESS_FINE_LOCATION] == true ||
+            val granted = permissions[Manifest.permission.ACCESS_FINE_LOCATION] == true ||
                         permissions[Manifest.permission.ACCESS_COARSE_LOCATION] == true
 
             if (granted) {
@@ -45,9 +43,6 @@ class ChooseLocationActivity : AppCompatActivity() {
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        AppCompatDelegate.setDefaultNightMode(
-            AppCompatDelegate.MODE_NIGHT_NO
-        )
         super.onCreate(savedInstanceState)
 
         Configuration.getInstance().load(applicationContext, getSharedPreferences("osmdroid", MODE_PRIVATE))
@@ -91,25 +86,18 @@ class ChooseLocationActivity : AppCompatActivity() {
             locationPermissionLauncher.launch(
                 arrayOf(
                     Manifest.permission.ACCESS_FINE_LOCATION,
-                    Manifest.permission.ACCESS_COARSE_LOCATION
-                )
+                    Manifest.permission.ACCESS_COARSE_LOCATION)
             )
         }
 
 
-        mapView.addMapListener(
-            object : org.osmdroid.events.MapListener {
-
-                override fun onScroll(
-                    event: org.osmdroid.events.ScrollEvent?
-                ): Boolean {
+        mapView.addMapListener(object : org.osmdroid.events.MapListener {
+                override fun onScroll(event: org.osmdroid.events.ScrollEvent?): Boolean {
                     updateCoordinates()
                     return true
                 }
 
-                override fun onZoom(
-                    event: org.osmdroid.events.ZoomEvent?
-                ): Boolean {
+                override fun onZoom(event: org.osmdroid.events.ZoomEvent?): Boolean {
                     updateCoordinates()
                     return true
                 }
@@ -118,16 +106,8 @@ class ChooseLocationActivity : AppCompatActivity() {
     }
 
     private fun hasLocationPermission(): Boolean {
-        val fine = ContextCompat.checkSelfPermission(
-            this,
-            Manifest.permission.ACCESS_FINE_LOCATION
-        ) == PackageManager.PERMISSION_GRANTED
-
-        val coarse = ContextCompat.checkSelfPermission(
-            this,
-            Manifest.permission.ACCESS_COARSE_LOCATION
-        ) == PackageManager.PERMISSION_GRANTED
-
+        val fine = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+        val coarse = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
         return fine || coarse
     }
 

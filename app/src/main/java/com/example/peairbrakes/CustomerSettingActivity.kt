@@ -17,9 +17,6 @@ class CustomerSettingActivity: AppCompatActivity() {
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        AppCompatDelegate.setDefaultNightMode(
-            AppCompatDelegate.MODE_NIGHT_NO
-        )
         super.onCreate(savedInstanceState)
         _binding = ActivityCustomerSettingBinding.inflate(layoutInflater)
         setContentView(_binding!!.root)
@@ -51,9 +48,14 @@ class CustomerSettingActivity: AppCompatActivity() {
             finish()
         }
 
-        binding.tvThemeSwitch.isChecked = AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
+        val sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE)
+        val isDarkMode = sharedPreferences.getBoolean("DarkMode", false)
+
+        binding.tvThemeSwitch.setOnCheckedChangeListener(null)
+        binding.tvThemeSwitch.isChecked = isDarkMode
 
         binding.tvThemeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            sharedPreferences.edit().putBoolean("DarkMode", isChecked).apply()
 
             if (isChecked) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)

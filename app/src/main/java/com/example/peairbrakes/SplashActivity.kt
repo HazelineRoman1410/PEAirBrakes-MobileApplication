@@ -14,8 +14,10 @@ import androidx.core.view.WindowInsetsCompat
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        val sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE)
+        val isDarkMode = sharedPreferences.getBoolean("DarkMode", false)
         AppCompatDelegate.setDefaultNightMode(
-            AppCompatDelegate.MODE_NIGHT_NO
+            if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
         )
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
